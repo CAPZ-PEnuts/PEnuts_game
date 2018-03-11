@@ -5,6 +5,7 @@ using UnityEngine.Networking;
 
 public class PlayerController : NetworkBehaviour
 {
+    public GameObject playercolor;
     public GameObject balleprefab;
     public Transform bulletspawn;
     public float speedmov = 1;
@@ -23,6 +24,11 @@ public class PlayerController : NetworkBehaviour
             {
                 CmdFire();
             }
+            
+        }
+        else if(!isLocalPlayer)
+        {
+            playercolor.GetComponent<MeshRenderer>().material.color = Color.red;
         }
     }
     [Command]
@@ -35,6 +41,6 @@ public class PlayerController : NetworkBehaviour
     }
     public override void OnStartLocalPlayer()
     {
-        GetComponent<MeshRenderer>().material.color = Color.blue; 
+        playercolor.GetComponent<MeshRenderer>().material.color = Color.blue;
     }
 }
