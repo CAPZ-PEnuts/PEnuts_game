@@ -1,6 +1,5 @@
 # PEnuts_Website
-Here is the website of our project : PEnuts
-
+Here is the website of our project : https://pierrick-made.github.io/PEnuts/Website/
 ## TODO
 * change everything in the .html files
 
