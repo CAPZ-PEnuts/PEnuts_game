@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\epita\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_PEnuts_Game.-1990502284.00" t="ExcludeRecursive" />
-    <e p="C:\Users\epita\Documents\GitHub\PEnuts\PEnuts_Game" t="IncludeRecursive">
+    <e p="C:\Users\ziane layadi\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_PEnuts_Game.-790190418.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ziane layadi\Documents\GitHub\PEnuts\PEnuts_Game" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -53,7 +53,12 @@
             <e p="code" t="Include">
               <e p="bouger.cs" t="Include" />
               <e p="camera.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Ziane" t="Include">
+            <e p="code" t="Include">
               <e p="echap.cs" t="Include" />
+              <e p="openscene.cs" t="Include" />
               <e p="quit.cs" t="Include" />
               <e p="scenechanger.cs" t="Include" />
             </e>
@@ -64,7 +69,10 @@
           <e p="script" t="Include">
             <e p="Bullet.cs" t="Include" />
             <e p="Health.cs" t="Include" />
+            <e p="kilzone.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
+            <e p="visionblue.cs" t="Include" />
+            <e p="visionred_.cs" t="Include" />
           </e>
         </e>
         <e p="SD_Character" t="Include">
