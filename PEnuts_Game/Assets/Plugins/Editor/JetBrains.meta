@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 316eb888acb660443984e1cda40ba171
 folderAsset: yes
 timeCreated: 1520859243
+=======
+guid: 33837b1a93d4d1e478f4b1aedfda2138
+folderAsset: yes
+timeCreated: 1520865653
+>>>>>>> Cloe
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
