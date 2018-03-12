@@ -8,18 +8,42 @@ public class PlayerController : NetworkBehaviour
     public GameObject playercolor;
     public GameObject balleprefab;
     public Transform bulletspawn;
+    public GameObject bluebox;
+    public GameObject redbox;
+    public bool condition; 
     public float speedmov = 1;
     public float speedjump = 5;
+   
     void Update()
     {
         if (isLocalPlayer)
         {
-            var x = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f * speedmov;
-            var z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f* speedmov;
+            /*
+            if (condition)
+            {
+                bluebox.SetActive(false);
+            }
+            else
+            {
+                redbox.SetActive(false);
+            }
+            */
+            var z = Input.GetAxis("Horizontal") ;
+            var x = Input.GetAxis("Vertical") * Time.deltaTime * speedmov; 
             transform.position += transform.up * Time.deltaTime * speedjump * Input.GetAxis("Jump"); 
-            transform.Rotate(0, x, 0);
-            transform.Translate(0, 0, z);
-
+            //transform.Rotate(0, z*90, 0);
+            transform.Translate(0, 0, x); 
+            if (Input.GetButtonDown("Horizontal"))
+            {
+                if (z < 0)
+                { 
+                    transform.Rotate(0,-90, 0);
+                }
+                else
+                {
+                    transform.Rotate(0, 90, 0);
+                }
+            }
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 CmdFire();
@@ -39,8 +63,9 @@ public class PlayerController : NetworkBehaviour
         NetworkServer.Spawn(bullet);
         Destroy(bullet, 2.0f); 
     }
-    public override void OnStartLocalPlayer()
+
+    public override void OnStartLocalPlayer()   
     {
-        playercolor.GetComponent<MeshRenderer>().material.color = Color.blue;
+        playercolor.GetComponent<MeshRenderer>().material.color = Color.blue;      
     }
 }
