@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class echap : MonoBehaviour {
 
-    public string scenename; 
+    public string scenename;
+    public GameObject canvas;
+    public GameObject multi; 
 	// Use this for initialization
 	void Start () {
 		
@@ -14,7 +16,21 @@ public class echap : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
+        
         if (Input.GetKeyDown(KeyCode.Escape))
-            SceneManager.LoadScene(scenename);
+        {
+            /*
+            if (canvas.activeInHierarchy && !(multi.activeInHierarchy))
+                SceneManager.LoadScene(scenename);
+            else
+            {
+                canvas.SetActive(true);
+                multi.SetActive(false);
+            }
+            */
+            canvas.SetActive(true);
+            multi.SetActive(false);
+        }
+               
 	}
 }

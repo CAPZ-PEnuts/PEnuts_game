@@ -10,7 +10,8 @@ public class visionblue : MonoBehaviour {
     public GameObject canvas;
     private void Start()
     {
-        multi.SetActive(false);
+        if(multi.activeInHierarchy)
+            multi.SetActive(false);
     }
     // Use this for initialization
     public void changevision()
