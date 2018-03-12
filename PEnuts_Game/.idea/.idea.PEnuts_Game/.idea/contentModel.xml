@@ -40,6 +40,14 @@
               </e>
             </e>
           </e>
+          <e p="Realistic Hail Set" t="Include">
+            <e p="Demo Scene" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="DemoSceneController.cs" t="Include" />
+              </e>
+            </e>
+            <e p="README.txt" t="Include" />
+          </e>
         </e>
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
@@ -49,10 +57,24 @@
           </e>
         </e>
         <e p="Sandbox" t="Include">
+          <e p="Alexandre" t="Include">
+            <e p="Experimenting" t="Include">
+              <e p="Signals 1" t="Include">
+                <e p="Door.cs" t="Include" />
+                <e p="GateAND.cs" t="Include" />
+                <e p="PressurePlate.cs" t="Include" />
+                <e p="SignalHandeler.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Cloé" t="Include">
             <e p="code" t="Include">
               <e p="bouger.cs" t="Include" />
+              <e p="caissePlayer.cs" t="Include" />
               <e p="camera.cs" t="Include" />
+              <e p="cubemouv.cs" t="Include" />
+              <e p="mouv.cs" t="Include" />
+              <e p="vision.cs" t="Include" />
             </e>
           </e>
           <e p="Ziane" t="Include">
@@ -70,6 +92,7 @@
             <e p="Bullet.cs" t="Include" />
             <e p="Health.cs" t="Include" />
             <e p="kilzone.cs" t="Include" />
+            <e p="particuleactivatide.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="visionblue.cs" t="Include" />
             <e p="visionred_.cs" t="Include" />
