@@ -9,11 +9,11 @@ public class GateAND : MonoBehaviour
 	public string signal2;
 	public string signalOut;
 	public GameObject signalHandelerObject;
-	private bool status;
+	private bool _status;
 	
 	void Start ()
 	{
-		status = false;
+		_status = false;
 	}
 	
 	// Update is called once per frame
@@ -23,13 +23,13 @@ public class GateAND : MonoBehaviour
 			SignalHandeler signalHandeler = signalHandelerObject.GetComponent<SignalHandeler>();
 			if (signalHandeler != null)
 			{
-				if (status != (signalHandeler.GetSignal(signal1) && signalHandeler.GetSignal(signal2)))
+				if (_status != (signalHandeler.GetSignal(signal1) && signalHandeler.GetSignal(signal2)))
 				{
-					status = !status;
+					_status = !_status;
 					if (!signalHandeler.Exists(signalOut))
-						signalHandeler.AddSignal(signalOut,status);
+						signalHandeler.AddSignal(signalOut,_status);
 					else
-						signalHandeler.SetSignal(signalOut,status);
+						signalHandeler.SetSignal(signalOut,_status);
 				}
 			}
 		}
