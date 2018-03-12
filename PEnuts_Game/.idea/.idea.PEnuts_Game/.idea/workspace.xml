@@ -11,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="cubemouv.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cubemouv.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Sandbox/Cloé/code/cubemouv.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <marker date="1520868757511" expanded="true" signature="6:78" ph="..." />
                 <marker date="1520868757511" expanded="true" signature="118:452" ph="{...}" />
@@ -28,16 +28,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="caissePlayer.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="caissePlayer.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Sandbox/Cloé/code/caissePlayer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="270">
+              <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
               <folding>
-                <marker date="1520868757496" expanded="false" signature="6:78" ph="..." />
-                <marker date="1520868757496" expanded="true" signature="122:634" ph="{...}" />
-                <marker date="1520868757496" expanded="true" signature="171:632" ph="{...}" />
-                <marker date="1520868757496" expanded="true" signature="196:629" ph="{...}" />
+                <marker date="1520871764471" expanded="true" signature="6:78" ph="..." />
+                <marker date="1520871764471" expanded="true" signature="122:622" ph="{...}" />
+                <marker date="1520871764471" expanded="true" signature="171:620" ph="{...}" />
+                <marker date="1520871764471" expanded="true" signature="196:617" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -60,8 +60,8 @@
         <option value="$PROJECT_DIR$/Assets/Sandbox/Cloé/code/mouv.cs" />
         <option value="$PROJECT_DIR$/Assets/Sandbox/Cloé/code/vision.cs" />
         <option value="$PROJECT_DIR$/Assets/Sandbox/Cloé/code/cube mouv.cs" />
-        <option value="$PROJECT_DIR$/Assets/Sandbox/Cloé/code/caissePlayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Sandbox/Cloé/code/cubemouv.cs" />
+        <option value="$PROJECT_DIR$/Assets/Sandbox/Cloé/code/caissePlayer.cs" />
       </list>
     </option>
   </component>
@@ -71,7 +71,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="y" value="2" />
     <option name="width" value="1036" />
@@ -179,12 +179,12 @@
       <workItem from="1520865653378" duration="724000" />
       <workItem from="1520867533474" duration="9000" />
       <workItem from="1520867576493" duration="33000" />
-      <workItem from="1520867631156" duration="1544000" />
+      <workItem from="1520867631156" duration="2544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3560000" />
+    <option name="totallyTimeSpent" value="4560000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -196,8 +196,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="2" width="1036" height="733" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -207,7 +206,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18541667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34901962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -301,23 +300,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Sandbox/Cloé/code/caissePlayer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <marker date="1520868757496" expanded="false" signature="6:78" ph="..." />
-            <marker date="1520868757496" expanded="true" signature="122:634" ph="{...}" />
-            <marker date="1520868757496" expanded="true" signature="171:632" ph="{...}" />
-            <marker date="1520868757496" expanded="true" signature="196:629" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Sandbox/Cloé/code/cubemouv.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <marker date="1520868757511" expanded="true" signature="6:78" ph="..." />
             <marker date="1520868757511" expanded="true" signature="118:452" ph="{...}" />
@@ -325,6 +311,19 @@
             <marker date="1520868757511" expanded="true" signature="225:297" ph="{...}" />
             <marker date="1520868757511" expanded="true" signature="338:450" ph="{...}" />
             <marker date="1520868757511" expanded="true" signature="375:447" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Sandbox/Cloé/code/caissePlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+          <folding>
+            <marker date="1520871764471" expanded="true" signature="6:78" ph="..." />
+            <marker date="1520871764471" expanded="true" signature="122:622" ph="{...}" />
+            <marker date="1520871764471" expanded="true" signature="171:620" ph="{...}" />
+            <marker date="1520871764471" expanded="true" signature="196:617" ph="{...}" />
           </folding>
         </state>
       </provider>

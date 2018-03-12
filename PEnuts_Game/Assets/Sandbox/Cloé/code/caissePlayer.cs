@@ -16,7 +16,7 @@ public class caissePlayer : MonoBehaviour {
 			//on ajoute le is kinetic à l'objet  
 			rb = GetComponent<Rigidbody>();
 			rb.isKinematic = true;
-			//on débloque le mouvement sur X
+			//on débloque mouv x
 			rb.constraints = RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ |
 			                 RigidbodyConstraints.FreezeRotation;
 		}
