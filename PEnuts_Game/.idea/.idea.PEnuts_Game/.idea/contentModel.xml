@@ -3,8 +3,29 @@
   <component name="ContentModelStore">
     <e p="C:\Users\epita\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_PEnuts_Game.-1990502284.00" t="ExcludeRecursive" />
     <e p="C:\Users\epita\Documents\GitHub\PEnuts\PEnuts_Game" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Sandbox" t="Include">
+          <e p="Cloé" t="Include">
+            <e p="code" t="Include">
+              <e p="caissePlayer.cs" t="Include" />
+              <e p="cubemouv.cs" t="Include" />
+              <e p="echap.cs" t="Include" />
+              <e p="mouv.cs" t="Include" />
+              <e p="quit.cs" t="Include" />
+              <e p="scenechanger.cs" t="Include" />
+              <e p="vision.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="NewBehaviourScript.cs" t="Include" />
         </e>
