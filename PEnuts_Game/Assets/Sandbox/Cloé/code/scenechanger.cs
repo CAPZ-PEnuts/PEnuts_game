@@ -7,6 +7,7 @@ public class scenechanger : MonoBehaviour {
 
     public string scenetogo;
 
+
 	// Use this for initialization
 	void Start () {
 		
