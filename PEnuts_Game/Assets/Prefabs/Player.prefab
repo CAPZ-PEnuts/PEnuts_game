@@ -663,6 +663,7 @@ GameObject:
   - component: {fileID: 223434248575320826}
   - component: {fileID: 114913361785378684}
   - component: {fileID: 114520681517170028}
+  - component: {fileID: 114141914378341820}
   m_Layer: 5
   m_Name: Health Canvas
   m_TagString: Untagged
@@ -840,6 +841,7 @@ GameObject:
   - component: {fileID: 114584907916082146}
   - component: {fileID: 114667448786963038}
   - component: {fileID: 54782095569851162}
+  - component: {fileID: 114438737704078304}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2216,6 +2218,17 @@ MonoBehaviour:
     i15: 37
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
+--- !u!114 &114141914378341820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1593305058998468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 930f716ab45cd1743812a097c3a75740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114266964042513672
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2277,6 +2290,18 @@ MonoBehaviour:
   colliders: []
   debug: 1
   threshold: 0.01
+--- !u!114 &114438737704078304
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1865810057033202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec6f6a9bf6595ad479405725aafadc64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Caisse: {fileID: 0}
 --- !u!114 &114520681517170028
 MonoBehaviour:
   m_ObjectHideFlags: 1
