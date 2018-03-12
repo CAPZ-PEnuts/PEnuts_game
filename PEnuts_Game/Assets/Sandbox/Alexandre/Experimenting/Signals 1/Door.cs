@@ -8,6 +8,7 @@ public class Door : MonoBehaviour
 
 	public string signal;
 	public GameObject signalHandelerObject;
+	public GameObject doorObject;
 	
 	// Use this for initialization
 	void Start () {
@@ -16,11 +17,11 @@ public class Door : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-		if (signal != null && signalHandelerObject != null)
+		if (signal != null && signalHandelerObject != null && doorObject != null)
 		{
 			SignalHandeler signalHandeler = signalHandelerObject.GetComponent<SignalHandeler>();
-			if (signalHandeler != null && signalHandeler.Exists(signal) && gameObject.activeSelf != signalHandeler.GetSignal(signal))
-				gameObject.SetActive(!gameObject.activeSelf);
+			if (signalHandeler != null /*&& signalHandeler.Exists(signal)*/ && doorObject.activeSelf != !signalHandeler.GetSignal(signal))
+				doorObject.SetActive(!doorObject.activeSelf);
 		}
 	}
 }

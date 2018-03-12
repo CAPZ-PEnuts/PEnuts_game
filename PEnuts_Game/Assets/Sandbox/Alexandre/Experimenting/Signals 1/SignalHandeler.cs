@@ -6,13 +6,11 @@ using UnityEngine;
 public class SignalHandeler : MonoBehaviour
 {
 
-	private static bool _exist;
 	private static Dictionary<string,int> _signals;
 	
 	// Use this for initialization
 	void Start () {
 		_signals = new Dictionary<string, int>();
-		_exist = true;
 	}
 	
 	// Update is called once per frame
@@ -20,13 +18,10 @@ public class SignalHandeler : MonoBehaviour
 		
 	}
 
-	public static bool Exist
-	{
-		get { return _exist; }
-	}
 
 	public void AddSignal(string name, bool state = false)
 	{
+		
 		if (!_signals.ContainsKey(name))
 		{
 			_signals.Add(name, state? 1 : 0);
@@ -39,11 +34,17 @@ public class SignalHandeler : MonoBehaviour
 
 	public bool GetSignal(string name)
 	{
+
 		if (Exists(name))
+		{
+			Debug.Log("Accessed signal " + name + " = " + _signals[name].ToString());
 			return _signals[name] > 0;
+		}
 		else
-			Debug.Log("SignalHandeler.GetSignal: signal \"" + name + "\" doesn't exists!");
-		return false;
+		{
+			//Debug.Log("SignalHandeler.GetSignal: signal \"" + name + "\" doesn't exists!");
+			return false;
+		}
 	}
 
 	public bool Exists(string name)
