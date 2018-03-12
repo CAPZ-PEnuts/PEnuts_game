@@ -938,8 +938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e17b3ee3408255498b685f117bc9e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenetogo: test grid
-  donotdestroy: 
+  scenetogo: cube mouvement
 --- !u!114 &1898838348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -952,7 +951,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenetogo: 
-  donotdestroy: 
 --- !u!1 &1902361109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,7 +1147,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenetogo: options
-  donotdestroy: 
 --- !u!1 &2017506599
 GameObject:
   m_ObjectHideFlags: 0

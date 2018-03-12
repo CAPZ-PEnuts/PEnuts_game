@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Sandbox/Clo\xE9/scenes/options.unity"
     guid: 88af67e34a97f7244b2073f2eb958235
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/test grid.unity
     guid: 1dab687eb31def84f896cd9fad001c2c
+  - enabled: 0
+    path: "Assets/Sandbox/Clo\xE9/scenes/jeu.unity"
+    guid: 85ef2bd10dd1b7a40bdce9a49ce1dbe3
+  - enabled: 1
+    path: "Assets/Sandbox/Clo\xE9/scenes/cube mouvement.unity"
+    guid: 107a5f48ebcf46a45b08d37651ce91ef
