@@ -7,13 +7,12 @@ public class scenechanger : MonoBehaviour {
 
     public string scenetogo;
 
-
 	// Use this for initialization
 	void Start () {
 		
 	}
 
-    public void changescene()
+    public void Changescene()
     {
         //SceneManager.UnloadScene("DontDestroyOnLoad");
         SceneManager.LoadScene(scenetogo);
