@@ -89,6 +89,7 @@
         <e p="Scripts" t="Include">
           <e p="NewBehaviourScript.cs" t="Include" />
           <e p="script" t="Include">
+            <e p="billboard.cs" t="Include" />
             <e p="Bullet.cs" t="Include" />
             <e p="Health.cs" t="Include" />
             <e p="kilzone.cs" t="Include" />

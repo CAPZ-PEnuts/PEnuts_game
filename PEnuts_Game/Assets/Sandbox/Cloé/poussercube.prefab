@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 23758474422635700}
   - component: {fileID: 54535065307371220}
   - component: {fileID: 114133365752736418}
+  - component: {fileID: 114919353111549046}
+  - component: {fileID: 114080604526938398}
   m_Layer: 0
   m_Name: poussercube
   m_TagString: Untagged
@@ -38,8 +40,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1382388314446238}
   m_LocalRotation: {x: 0, y: 0, z: -0.0028049601, w: 0.99999607}
-  m_LocalPosition: {x: 3.28, y: -0.283, z: 0.762}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.224, y: -0.283, z: 0.722}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -112,6 +114,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114080604526938398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1382388314446238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TransformSyncMode: 3
+  m_SendInterval: 0.033333335
+  m_SyncRotationAxis: 7
+  m_RotationSyncCompression: 0
+  m_SyncSpin: 0
+  m_MovementTheshold: 0.001
+  m_VelocityThreshold: 0.0001
+  m_SnapThreshold: 5
+  m_InterpolateRotation: 1
+  m_InterpolateMovement: 1
 --- !u!114 &114133365752736418
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -124,3 +147,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1865810057033202, guid: aada0d23238851644aed56aed1bc2d25, type: 2}
+--- !u!114 &114919353111549046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1382388314446238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 372142912, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SceneId:
+    m_Value: 0
+  m_AssetId:
+    i0: 243
+    i1: 50
+    i2: 141
+    i3: 86
+    i4: 66
+    i5: 97
+    i6: 255
+    i7: 36
+    i8: 139
+    i9: 37
+    i10: 209
+    i11: 89
+    i12: 30
+    i13: 94
+    i14: 195
+    i15: 249
+  m_ServerOnly: 0
+  m_LocalPlayerAuthority: 0
