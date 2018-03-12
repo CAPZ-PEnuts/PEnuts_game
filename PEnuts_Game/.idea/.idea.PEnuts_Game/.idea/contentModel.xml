@@ -96,7 +96,7 @@
             <e p="particuleactivatide.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="teleportation.cs" t="Include" />
-            <e p="TPvectorzero.cs" t="Include" />
+            <e p="tpvector0.cs" t="Include" />
             <e p="visionblue.cs" t="Include" />
             <e p="visionred_.cs" t="Include" />
           </e>

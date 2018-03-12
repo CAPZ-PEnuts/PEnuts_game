@@ -644,7 +644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e17b3ee3408255498b685f117bc9e6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenetogo: scene 1
+  scenetogo: le jeu
 --- !u!4 &1759070305
 Transform:
   m_ObjectHideFlags: 0
