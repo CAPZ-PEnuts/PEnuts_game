@@ -20,14 +20,18 @@ public class PressurePlate : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+		Debug.Log("Updated 1 " + _counter.ToString());
 		if (_state != _counter > 0)
 		{
+			Debug.Log("Updated 2");
 			_state = !_state;
 			if (signal != null)
 			{
+				Debug.Log("Updated 3");
 				SignalHandeler signalHandeler = signalHandelerObject.GetComponent<SignalHandeler>();
 				if (signalHandeler != null)
 				{
+					Debug.Log("Updated 4");
 					if (!signalHandeler.Exists(signal))
 						signalHandeler.AddSignal(signal,_state);
 					else
