@@ -369,7 +369,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1385781267292290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1170,8 +1170,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1962922021562256}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.221, z: 0.056}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4316249230036798}
@@ -2067,7 +2067,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!65 &65106892431284764
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -2179,7 +2179,10 @@ MonoBehaviour:
   balleprefab: {fileID: 1959866346270022, guid: 7639ce383cf6ea941bedde0259fdf41a,
     type: 2}
   bulletspawn: {fileID: 4275903283771808}
-  speedmov: 1
+  bluebox: {fileID: 1656778814710520, guid: b335261aa9ef78a4f8927487a0e53da9, type: 2}
+  redbox: {fileID: 1931643748240002, guid: 02f6d88c5d5a58d45827228ff50915c1, type: 2}
+  condition: 0
+  speedmov: 3
   speedjump: 5
 --- !u!114 &114137768302081134
 MonoBehaviour:
@@ -2227,6 +2230,9 @@ MonoBehaviour:
   playercolor: {fileID: 0}
   balleprefab: {fileID: 0}
   bulletspawn: {fileID: 0}
+  bluebox: {fileID: 0}
+  redbox: {fileID: 0}
+  condition: 0
   speedmov: 1
   speedjump: 5
 --- !u!114 &114296949167105940
@@ -2658,10 +2664,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 1.1967287
+  m_Radius: 0.21446127
+  m_Height: 1.0917829
   m_Direction: 1
-  m_Center: {x: 0, y: 0.1928277, z: 0}
+  m_Center: {x: 0, y: 0.186441, z: 0.0037626624}
 --- !u!137 &137605996981504626
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
