@@ -46,7 +46,7 @@ public class PressurePlate : MonoBehaviour
 
 	private void OnTriggerStay(Collider other)
 	{
-		_counter = 10;
+		_counter = 60;
 	}
 /*
 	private void OnTriggerEnter(Collider intruder)

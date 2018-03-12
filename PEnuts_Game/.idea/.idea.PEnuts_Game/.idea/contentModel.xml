@@ -53,8 +53,9 @@
             <e p="Experimenting" t="Include">
               <e p="Signals 1" t="Include">
                 <e p="Door.cs" t="Include" />
-                <e p="Pressure Plate.cs" t="Include" />
-                <e p="Signal Handeler.cs" t="Include" />
+                <e p="GateAND.cs" t="Include" />
+                <e p="PressurePlate.cs" t="Include" />
+                <e p="SignalHandeler.cs" t="Include" />
               </e>
             </e>
           </e>
