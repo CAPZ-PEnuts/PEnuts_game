@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\epita\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_PEnuts_Game.-1990502284.00" t="ExcludeRecursive" />
-    <e p="C:\Users\epita\Documents\GitHub\PEnuts\PEnuts_Game" t="IncludeRecursive">
+    <e p="C:\Users\ziane layadi\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_PEnuts_Game.-790190418.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ziane layadi\Documents\GitHub\PEnuts\PEnuts_Game" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -40,6 +40,14 @@
               </e>
             </e>
           </e>
+          <e p="Realistic Hail Set" t="Include">
+            <e p="Demo Scene" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="DemoSceneController.cs" t="Include" />
+              </e>
+            </e>
+            <e p="README.txt" t="Include" />
+          </e>
         </e>
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
@@ -66,7 +74,6 @@
               <e p="camera.cs" t="Include" />
               <e p="cubemouv.cs" t="Include" />
               <e p="mouv.cs" t="Include" />
-              <e p="teleportation.cs" t="Include" />
               <e p="vision.cs" t="Include" />
             </e>
           </e>
@@ -82,10 +89,14 @@
         <e p="Scripts" t="Include">
           <e p="NewBehaviourScript.cs" t="Include" />
           <e p="script" t="Include">
+            <e p="billboard.cs" t="Include" />
             <e p="Bullet.cs" t="Include" />
             <e p="Health.cs" t="Include" />
             <e p="kilzone.cs" t="Include" />
+            <e p="particuleactivatide.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
+            <e p="teleportation.cs" t="Include" />
+            <e p="tpvector0.cs" t="Include" />
             <e p="visionblue.cs" t="Include" />
             <e p="visionred_.cs" t="Include" />
           </e>

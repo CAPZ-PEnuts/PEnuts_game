@@ -37,7 +37,6 @@ public class SignalHandeler : MonoBehaviour
 
 		if (Exists(name))
 		{
-			Debug.Log("Accessed signal " + name + " = " + _signals[name].ToString());
 			return _signals[name] > 0;
 		}
 		else
