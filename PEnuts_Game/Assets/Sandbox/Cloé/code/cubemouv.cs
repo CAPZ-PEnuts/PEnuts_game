@@ -11,8 +11,7 @@ public class cubemouv : MonoBehaviour {
 	{
 		if (other.gameObject == player)
 		{
-			other.gameObject.GetComponent<caissePlayer>().Caisse = this;
-            this.GetComponent<Rigidbody>().isKinematic = true; 
+			other.gameObject.GetComponent<caissePlayer>().Caisse = this; 
             mouv.y += 0.01f;
             transform.position += mouv;             
 		}
@@ -24,7 +23,6 @@ public class cubemouv : MonoBehaviour {
 		{
 			other.gameObject.GetComponent<caissePlayer>().Caisse = null;
             transform.position -= mouv;
-            this.GetComponent<Rigidbody>().isKinematic = false;
         }
 	}
 }
