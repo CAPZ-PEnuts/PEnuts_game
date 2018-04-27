@@ -4,8 +4,10 @@ using UnityEngine;
 using UnityEngine.Networking; 
 public class Bullet : NetworkBehaviour
 {
-   void OncollisionEnter(Collision collision)
+    
+    void OncollisionEnter(Collision collision)
     {
+        Destroy(gameObject);
         Debug.Log("yes");
         var hit = collision.gameObject; 
         var health = hit.GetComponent<Health>();

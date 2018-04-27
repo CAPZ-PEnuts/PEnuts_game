@@ -13,7 +13,10 @@ public class PlayerController : NetworkBehaviour
     public bool condition; 
     public float speedmov = 1;
     public float speedjump = 5;
-   
+    public float cadence_de_tir = 2f; 
+    
+    
+    private float nextfire = 0f;
     void Update()
     {
         if (isLocalPlayer)
@@ -44,8 +47,11 @@ public class PlayerController : NetworkBehaviour
                     transform.Rotate(0, 90, 0);
                 }
             }
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            
+            
+            if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time > nextfire )
             {
+                nextfire = Time.time + cadence_de_tir; 
                 CmdFire();
             }
             
@@ -59,7 +65,7 @@ public class PlayerController : NetworkBehaviour
     void CmdFire()
     {
         var bullet = (GameObject)Instantiate(balleprefab, bulletspawn.position, bulletspawn.rotation);
-        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 6;
+        bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 15f;
         NetworkServer.Spawn(bullet);
         Destroy(bullet, 2.0f); 
     }
