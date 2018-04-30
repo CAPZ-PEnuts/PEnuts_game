@@ -38,6 +38,7 @@ public class PressurePlate : MonoBehaviour
 
 		if (_counter > 0)
 			_counter--;
+		
 	}
 
 	private void OnTriggerStay(Collider other)
