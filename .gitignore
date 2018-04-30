@@ -32,3 +32,4 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+PEnuts_Game/.vs/PEnuts_Game/v15/Server/sqlite3/db.lock
