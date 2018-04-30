@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking; 
+
+
 public class Bullet : NetworkBehaviour
 {
-   void OncollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         Debug.Log("yes");
         var hit = collision.gameObject; 
