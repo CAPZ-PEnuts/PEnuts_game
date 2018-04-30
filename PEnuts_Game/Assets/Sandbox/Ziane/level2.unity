@@ -176,7 +176,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &474737962
 GameObject:
@@ -422,52 +422,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4504257773764036, guid: 107365f2698c95c4b9e342e85b5c2cfc, type: 2}
       propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114247559766152414, guid: 107365f2698c95c4b9e342e85b5c2cfc,
-        type: 2}
-      propertyPath: cadence_de_degat
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 65350892032990058, guid: 107365f2698c95c4b9e342e85b5c2cfc,
-        type: 2}
-      propertyPath: m_Size.z
-      value: 2.247869
-      objectReference: {fileID: 0}
-    - target: {fileID: 65350892032990058, guid: 107365f2698c95c4b9e342e85b5c2cfc,
-        type: 2}
-      propertyPath: m_Center.z
-      value: 0.11265516
-      objectReference: {fileID: 0}
-    - target: {fileID: 65350892032990058, guid: 107365f2698c95c4b9e342e85b5c2cfc,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 1.3139547
-      objectReference: {fileID: 0}
-    - target: {fileID: 65350892032990058, guid: 107365f2698c95c4b9e342e85b5c2cfc,
-        type: 2}
-      propertyPath: m_Center.x
-      value: -0.0153065715
-      objectReference: {fileID: 0}
-    - target: {fileID: 195535214331524790, guid: 107365f2698c95c4b9e342e85b5c2cfc,
-        type: 2}
-      propertyPath: m_StoppingDistance
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 65350892032990058, guid: 107365f2698c95c4b9e342e85b5c2cfc,
-        type: 2}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 195535214331524790, guid: 107365f2698c95c4b9e342e85b5c2cfc,
-        type: 2}
-      propertyPath: m_Speed
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114603569752404878, guid: 107365f2698c95c4b9e342e85b5c2cfc,
-        type: 2}
-      propertyPath: lookradius
-      value: 8.02
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 107365f2698c95c4b9e342e85b5c2cfc, type: 2}
