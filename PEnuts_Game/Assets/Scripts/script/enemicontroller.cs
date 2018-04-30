@@ -10,6 +10,11 @@ public class enemicontroller : MonoBehaviour
 	public float lookradius = 20f;
 	public GameObject lumiere; 
 	private GameObject player; 
+	
+	public float cadence_de_degat = 10f;
+	private float next_degat;
+	public float distance_de_degat; 
+	
 	NavMeshAgent agent;
 	private float distance; 
 	private bool isdead = false;
@@ -46,6 +51,22 @@ public class enemicontroller : MonoBehaviour
 		else
 		{
 			lumiere.SetActive(false);
+		}
+
+		if (distance < distance_de_degat)
+		{
+			if (Time.time > next_degat)
+			{
+				Debug.Log("degat");
+				var hit = player;
+				var health = hit.GetComponent<Health>();
+				if (health != null)
+				{
+					health.TakeDamage(30);
+				}
+
+				next_degat = Time.time + cadence_de_degat;
+			}
 		}
 	}
 

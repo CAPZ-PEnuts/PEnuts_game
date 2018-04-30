@@ -62,6 +62,9 @@
               <e p="Signals 1" t="Include">
                 <e p="Door.cs" t="Include" />
                 <e p="GateAND.cs" t="Include" />
+                <e p="GateNot.cs" t="Include" />
+                <e p="InstanceStart.cs" t="Include" />
+                <e p="Laser.cs" t="Include" />
                 <e p="PressurePlate.cs" t="Include" />
                 <e p="SignalHandeler.cs" t="Include" />
               </e>
@@ -91,8 +94,11 @@
           <e p="script" t="Include">
             <e p="billboard.cs" t="Include" />
             <e p="Bullet.cs" t="Include" />
+            <e p="degat.cs" t="Include" />
+            <e p="enemicontroller.cs" t="Include" />
             <e p="Health.cs" t="Include" />
             <e p="kilzone.cs" t="Include" />
+            <e p="Mechat_controller.cs" t="Include" />
             <e p="particuleactivatide.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
             <e p="teleportation.cs" t="Include" />
