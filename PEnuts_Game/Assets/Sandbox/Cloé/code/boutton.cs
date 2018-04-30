@@ -12,14 +12,16 @@ public class boutton : MonoBehaviour {
 	// Use this for initialization
 	void Start()
     {
-        porte.mybut[place] = this; 
+        porte.mybut[place] = this;
+        Debug.Log(porte.mybut);
 	}
 	
 	void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == player)
+        //if (other.gameObject == player)
         {
             //if (Input.GetKeyDown(KeyCode.F))
+            Debug.Log("Prout53");
                 porte.activebutton(this); 
         }
     }

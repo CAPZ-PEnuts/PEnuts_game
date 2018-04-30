@@ -12,20 +12,28 @@ public class porte : MonoBehaviour {
 
     public porte()
     {
-        mybut = new boutton[nbelmt];
-        buttons = new Stack<boutton>(); 
+        
     }
 
-   void Start()
+    void Start()
     {
+        mybut = new boutton[nbelmt];
+        buttons = new Stack<boutton>();
         Thread.Sleep(3);
-        for (int i = nbelmt - 1; i >= 0; i--)
-            buttons.Push(mybut[i]);
+        foreach (boutton but in mybut)
+            buttons.Push(but);
     }
+    
+
+    
+   /*void Start()
+    {
+        
+    }*/
 
     public void activebutton (boutton bouton)
     {
-        Console.WriteLine("Button presse");
+        Debug.Log("Prout");
         if (bouton == buttons.Peek())
         {
             buttons.Pop();
