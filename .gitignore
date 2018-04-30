@@ -32,8 +32,12 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+<<<<<<< HEAD
 
 #Rider Related
 *.idea/*
 PEnuts_Game/.idea/.idea.PEnuts_Game/.idea/contentModel.xml
 PEnuts_Game/ProjectSettings/ProjectVersion.txt
+=======
+PEnuts_Game/.vs/PEnuts_Game/v15/Server/sqlite3/db.lock
+>>>>>>> origin/Cloe
