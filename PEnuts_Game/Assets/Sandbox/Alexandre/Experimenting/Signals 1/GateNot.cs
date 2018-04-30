@@ -11,7 +11,7 @@ public class GateNot : MonoBehaviour {
 	
 	void Start ()
 	{
-		status = false;
+		status = true;
 	}
 	
 	// Update is called once per frame

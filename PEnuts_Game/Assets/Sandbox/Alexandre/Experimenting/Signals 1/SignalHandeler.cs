@@ -82,5 +82,8 @@ public class SignalHandeler : MonoBehaviour
 				_signals[name] = state ? 1 : 0;
 		else
 			Debug.Log("SignalHandeler.SetSignal: signal \"" + name + "\" doesn't exists!");
+
+		if (_signals[name] < 0)
+			_signals[name] = 0;
 	}
 }
