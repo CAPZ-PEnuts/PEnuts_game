@@ -90,14 +90,17 @@
             </e>
           </e>
           <e p="pierrick" t="Include">
-            <e p="Scripts" t="Include">
-              <e p="lobby" t="Include">
-                <e p="HostGame.cs" t="Include" />
-                <e p="JoinGame.cs" t="Include" />
+            <e p="Menu" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="lobby" t="Include">
+                  <e p="HostGame.cs" t="Include" />
+                  <e p="JoinGame.cs" t="Include" />
+                </e>
+                <e p="MainMenu.cs" t="Include" />
+                <e p="SettingsMenu.cs" t="Include" />
               </e>
-              <e p="MainMenu.cs" t="Include" />
-              <e p="SettingsMenu.cs" t="Include" />
             </e>
+            <e p="PauseMenu.cs" t="Include" />
             <e p="TextMesh Pro" t="Include">
               <e p="Resources" t="Include">
                 <e p="LineBreaking Following Characters.txt" t="Include" />
