@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class cubemouv : MonoBehaviour {
 
-	public GameObject player;
     private Vector3 mouv = new Vector3(0, 0, 0);
     
     void OnTriggerEnter (Collider other)
 	{
-		if (other.gameObject == player)
+		if (other.gameObject.tag == "Player")
 		{
 			other.gameObject.GetComponent<caissePlayer>().Caisse = this;            
             mouv.y += 0.01f;
@@ -21,7 +20,7 @@ public class cubemouv : MonoBehaviour {
 
     void OnTriggerExit (Collider other)
 	{
-		if (other.gameObject == player)
+		if (other.gameObject.tag == "Player")
 		{
 			other.gameObject.GetComponent<caissePlayer>().Caisse = null;
             this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;

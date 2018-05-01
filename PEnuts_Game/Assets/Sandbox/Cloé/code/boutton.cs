@@ -5,14 +5,13 @@ using UnityEngine;
 
 public class boutton : MonoBehaviour
 {
-    public GameObject player;
     public signalhandlorder signal;
 
 
     void OnTriggerEnter(Collider other)
 
     {
-        if (other.gameObject == player)
+        if (other.gameObject.tag == "Player")
             //if (Input.GetKeyDown(KeyCode.F))
             signal.buttonpush(this);
 

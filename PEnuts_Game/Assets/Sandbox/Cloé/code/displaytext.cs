@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class displaytext : MonoBehaviour {
 
-    public GameObject player; 
-
-    void OnTriggerEnter(Collider other)
+   void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == player)
+        if (other.gameObject.tag == "Player")
             this.GetComponent<Renderer>().enabled = true;
     }
 
