@@ -4,23 +4,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class boutton : MonoBehaviour {
-
     public GameObject player;
-    public porte porte;
-    public int place; 
+    public signalhandlorder signal; 
 
-	// Use this for initialization
-	void Start()
+    void OnTriggerEnter(Collider other)
     {
-        porte.mybut[place] = this; 
-	}
-	
-	void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject == player)
-        {
-            //if (Input.GetKeyDown(KeyCode.F))
-                porte.activebutton(this); 
-        }
+     if (other.gameObject == player)
+        //if (Input.GetKeyDown(KeyCode.F))
+           signal.buttonpush(this);
     }
+
 }
