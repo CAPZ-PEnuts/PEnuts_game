@@ -84,8 +84,8 @@
               <e p="displaytext.cs" t="Include" />
               <e p="mouv.cs" t="Include" />
               <e p="pattern.cs" t="Include" />
-              <e p="porte.cs" t="Include" />
               <e p="rendererenable.cs" t="Include" />
+              <e p="signalhandlorder.cs" t="Include" />
               <e p="vision.cs" t="Include" />
             </e>
           </e>
