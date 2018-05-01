@@ -72,5 +72,9 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
+<<<<<<< HEAD
     - _Color: {r: 0.04865918, g: 0.15436706, b: 0.66176474, a: 1}
+=======
+    - _Color: {r: 0.56093204, g: 0.7264385, b: 0.9191176, a: 1}
+>>>>>>> Cloe
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
