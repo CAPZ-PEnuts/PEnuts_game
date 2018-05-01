@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:PEnuts_Game/Assets/particul/Realistic Hail Set/Demo Scene/Scenes.meta
+guid: bf2c0f503e22b3046949e857cc4c5006
+folderAsset: yes
+timeCreated: 1525170837
+=======
 guid: 4c426d23efa6ca9499c73e17d59783ee
 folderAsset: yes
 timeCreated: 1525176538
+>>>>>>> ba1bffe10f6ad3b0c45600d1597b83399de1714f:PEnuts_Game/Assets/particul/Realistic Hail Set/Demo Scene/Scenes.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}

@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:PEnuts_Game/Assets/particul/Realistic Hail Set/Materials.meta
+guid: 73523d38a981af24ab6f34319aca29c6
+folderAsset: yes
+timeCreated: 1525170837
+=======
 guid: 09cb477db7ca6424ca5179e0a0e9fb5e
 folderAsset: yes
 timeCreated: 1525176537
+>>>>>>> ba1bffe10f6ad3b0c45600d1597b83399de1714f:PEnuts_Game/Assets/particul/Realistic Hail Set/Materials.meta
 licenseType: Free
 DefaultImporter:
   externalObjects: {}
