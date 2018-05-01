@@ -24,7 +24,7 @@ public class cubemouv : MonoBehaviour {
 		if (other.gameObject == player)
 		{
 			other.gameObject.GetComponent<caissePlayer>().Caisse = null;
-            this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotation; 
+            this.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
         }
 	}
 }
