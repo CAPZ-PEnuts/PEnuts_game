@@ -9,11 +9,15 @@ public class boutton : MonoBehaviour
     public signalhandlorder signal;
 
 
-    void ontriggerenter(Collider other)
+    void OnTriggerEnter(Collider other)
+
     {
         if (other.gameObject == player)
             //if (Input.GetKeyDown(KeyCode.F))
             signal.buttonpush(this);
+
+    }
+
 
     }
 }

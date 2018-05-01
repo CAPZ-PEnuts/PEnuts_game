@@ -7,7 +7,15 @@ using UnityEngine.UI;
 public class SettingsMenu : MonoBehaviour
 {
 
-    public AudioMixer audioMixer;
+    public AudioMixer MasterMixer;
+    public AudioMixer MusicMixer;
+    public AudioMixer EffectMixer;
+
+
+    public string nameMasterVolume;
+    public string nameMusicVolume;
+    public string nameEffectVolume;
+
 
     public Dropdown resolutionDropdown;
 
@@ -47,9 +55,19 @@ public class SettingsMenu : MonoBehaviour
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
     
-    public void SetVolume(float volume)
+    public void SetMasterVolume(float volume)
     {
-        audioMixer.SetFloat("masterVolume", volume);
+        MasterMixer.SetFloat(nameMasterVolume, volume);
+    }
+    
+    public void SetMusicVolume(float volume)
+    {
+        MusicMixer.SetFloat(nameMusicVolume, volume);
+    }    
+    
+    public void SetEffectVolume(float volume)
+    {
+        EffectMixer.SetFloat(nameEffectVolume, volume);
     }
 
     public void SetQuality(int qualityIndex)
