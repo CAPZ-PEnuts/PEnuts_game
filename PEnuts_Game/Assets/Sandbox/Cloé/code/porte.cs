@@ -12,11 +12,8 @@ public class porte : MonoBehaviour {
 
     public porte()
     {
-<<<<<<< HEAD
         mybut = new boutton[20];
-=======
         mybut = new boutton[nbelmt];
->>>>>>> a72736335fc269e62d1d3d3ebedd4cb786289a51
         buttons = new Stack<boutton>(); 
     }
 
