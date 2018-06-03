@@ -646,9 +646,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 356adbcb-2c95-410c-a06a-120d32808b31
-  projectName: PEnuts (1)
-  organizationId: zorogo
+  cloudProjectId: 306277c0-8170-4e7c-91a6-93639bd2ff3c
+  projectName: PEnuts
+  organizationId: penuts
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
