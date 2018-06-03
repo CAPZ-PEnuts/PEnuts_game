@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class teleportation : MonoBehaviour
+using UnityEngine.Networking; 
+public class teleportation : NetworkBehaviour
 {
     public GameObject player;
     public string scenename;
-    
-    void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter(Collision other)
     {
         Debug.Log("Triggered");
         Component pc = other.gameObject.GetComponent("PlayerController");
@@ -16,6 +16,7 @@ public class teleportation : MonoBehaviour
         {
             Debug.Log("Teleported");
             SceneManager.LoadScene(scenename);
+            
         }
     }
 }

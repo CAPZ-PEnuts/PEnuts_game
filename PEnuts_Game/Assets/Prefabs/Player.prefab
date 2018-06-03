@@ -1212,7 +1212,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1865810057033202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.68, z: -5.13}
+  m_LocalPosition: {x: 0.07272124, y: -1.8399999, z: -0.69942236}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4612845659283268}
@@ -2443,6 +2443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 100
+  spawn: {fileID: 1310170401944454, guid: b6a9887ce6c4b8c459e94e6972abb610, type: 2}
   healthbar: {fileID: 224437649884359778}
 --- !u!114 &114777436377909368
 MonoBehaviour:

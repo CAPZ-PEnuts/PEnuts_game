@@ -94,10 +94,11 @@ GameObject:
   - component: {fileID: 195535214331524790}
   - component: {fileID: 114715976098607344}
   - component: {fileID: 114964328609691858}
+  - component: {fileID: 65350892032990058}
   - component: {fileID: 114085278718735728}
   m_Layer: 0
   m_Name: mechant
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -368,8 +369,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1301709982543484}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.85, y: -2.46, z: -10.2}
+  m_LocalRotation: {x: -0, y: -0.9890775, z: -0, w: 0.14739639}
+  m_LocalPosition: {x: -0.7264326, y: -2.34, z: 4.03}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
   - {fileID: 224799815225654346}
@@ -377,7 +378,7 @@ Transform:
   - {fileID: 4538507498293216}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -163.048, z: 0}
 --- !u!4 &4509126913767476
 Transform:
   m_ObjectHideFlags: 1
@@ -860,6 +861,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65350892032990058
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1301709982543484}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.4140947, z: 1.1537075}
+  m_Center: {x: 0, y: 1.5281621, z: 0.076852635}
 --- !u!65 &65447852204891400
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -991,6 +1004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 20
+  spawn: {fileID: 0}
   healthbar: {fileID: 224505425611768718}
 --- !u!114 &114389930952615176
 MonoBehaviour:
@@ -1030,10 +1044,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560ef71466aa0ca469e66e0cec80173c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookradius: 10.14
+  lookradius: 2.5
   lumiere: {fileID: 1990649191693994}
-  cadence_de_degat: 1
-  distance_de_degat: 2
+  cadence_de_degat: 2
+  distance_de_degat: 1
+  spwanmechant: {fileID: 0}
 --- !u!114 &114668886965223722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1196,11 +1211,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3
-  m_Acceleration: 8
+  m_Speed: 4.66
+  m_Acceleration: 1.2
   avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 1
+  m_AngularSpeed: 57.37
+  m_StoppingDistance: 0.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 0
   m_AutoRepath: 1

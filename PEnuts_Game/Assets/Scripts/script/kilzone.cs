@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class kilzone : MonoBehaviour 
 {
-
-    void OncollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("yes");
-        var hit = collision.gameObject;
-        hit.GetComponent<Health>().TakeDamage(100);
-
-
-
+        Debug.Log("degat");
+        var hit = other.gameObject;
+        var health = hit.GetComponent<Health>();
+        if (health != null)
+        {
+            health.TakeDamage(1000000);
+        }
     }
 }

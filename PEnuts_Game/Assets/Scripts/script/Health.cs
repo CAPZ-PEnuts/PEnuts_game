@@ -2,20 +2,49 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class Health : MonoBehaviour
+using  UnityEngine.Networking; 
+
+public class Health : NetworkBehaviour 
 {
-    public const int maxhealth = 100;
+    
+    private const int maxhealth = 100;
+    
+   [SyncVar(hook = "OnchangeHealth")]
     public int currentHealth = maxhealth;
-    public RectTransform healthbar; 
+
+    public GameObject spawn; 
+    
+    public RectTransform healthbar;
+
     public void TakeDamage(int amout)
     {
-        currentHealth -= amout;
-        if(currentHealth <= 0)
+        if (isServer)
         {
-            currentHealth = maxhealth;
-            transform.localPosition = Vector3.zero;
-            Debug.Log("dead!");
+            currentHealth -= amout;
+            if (currentHealth <= 0)
+            {
+                currentHealth = maxhealth;
+                RpcRspawn();
+                Debug.Log("dead!");
+            }
         }
-        healthbar.sizeDelta = new Vector2(currentHealth, healthbar.sizeDelta.y); 
+    }
+
+    void OnchangeHealth(int health)
+    {
+        healthbar.sizeDelta = new Vector2(health, healthbar.sizeDelta.y);
+    }
+
+    [ClientRpc]
+    void RpcRspawn()
+    {
+        if (gameObject.tag == "Monster")
+        {
+            Destroy(gameObject);
+        }
+        if (isLocalPlayer)
+        {
+            transform.position = spawn.transform.position; 
+        }
     }
 }

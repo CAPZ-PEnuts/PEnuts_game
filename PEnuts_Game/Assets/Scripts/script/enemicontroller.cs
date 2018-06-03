@@ -13,8 +13,9 @@ public class enemicontroller : MonoBehaviour
 	
 	public float cadence_de_degat = 10f;
 	private float next_degat;
-	public float distance_de_degat; 
-	
+	public float distance_de_degat;
+
+	public GameObject spwanmechant; 
 	NavMeshAgent agent;
 	private float distance; 
 	private bool isdead = false;
@@ -39,6 +40,7 @@ public class enemicontroller : MonoBehaviour
 					player = gameplayer[i];
 				}
 		}
+		
 		if(isdead)
 			Destroy(gameObject);
 		//float distance = Vector3.Distance(player.transform.position, transform.position);
@@ -51,6 +53,7 @@ public class enemicontroller : MonoBehaviour
 		else
 		{
 			lumiere.SetActive(false);
+			agent.SetDestination(spwanmechant.transform.position); 
 		}
 
 		if (distance < distance_de_degat)

@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\epita\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_PEnuts_Game.-123603499.00" t="ExcludeRecursive" />
-    <e p="C:\Users\epita\Desktop\travaux sur le projet\PEnuts\PEnuts_Game" t="IncludeRecursive">
+    <e p="C:\Users\ziane layadi\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_PEnuts_Game.-343945436.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ziane layadi\Desktop\PEnuts ziane update1\PEnuts_Game" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="loadScene.cs" t="Include" />
         <e p="particul" t="Include">
           <e p="JMO Assets" t="Include">
             <e p="!JMO Assets Readme.txt" t="Include" />
@@ -49,6 +50,7 @@
             <e p="README.txt" t="Include" />
           </e>
         </e>
+        <e p="playerspawn.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">
@@ -86,17 +88,21 @@
               <e p="pattern.cs" t="Include" />
               <e p="rendererenable.cs" t="Include" />
               <e p="signalhandlorder.cs" t="Include" />
+              <e p="respawncube.cs" t="Include" />
               <e p="vision.cs" t="Include" />
             </e>
           </e>
           <e p="pierrick" t="Include">
             <e p="Menu" t="Include">
               <e p="Scripts" t="Include">
+                <e p="ColorSelectMenu.cs" t="Include" />
+                <e p="FinishMenu.cs" t="Include" />
                 <e p="lobby" t="Include">
                   <e p="HostGame.cs" t="Include" />
                   <e p="JoinGame.cs" t="Include" />
                 </e>
                 <e p="MainMenu.cs" t="Include" />
+                <e p="PauseMenu.cs" t="Include" />
                 <e p="SettingsMenu.cs" t="Include" />
               </e>
             </e>
@@ -144,6 +150,7 @@
             <e p="Mechat_controller.cs" t="Include" />
             <e p="particuleactivatide.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
+            <e p="portail.cs" t="Include" />
             <e p="teleportation.cs" t="Include" />
             <e p="tpvector0.cs" t="Include" />
             <e p="visionblue.cs" t="Include" />

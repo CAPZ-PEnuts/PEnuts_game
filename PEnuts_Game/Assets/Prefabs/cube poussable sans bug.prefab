@@ -21,13 +21,14 @@ GameObject:
   - component: {fileID: 4005901604184764}
   - component: {fileID: 33516491685077310}
   - component: {fileID: 65784123538831088}
+  - component: {fileID: 114419585407626184}
   - component: {fileID: 23340666666660618}
   - component: {fileID: 65661520158521652}
   - component: {fileID: 54466302233179630}
   - component: {fileID: 114933968174837212}
   m_Layer: 0
   m_Name: cube poussable sans bug
-  m_TagString: Untagged
+  m_TagString: Caisse
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,8 +40,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1352117470534648}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.766263, y: 9.42, z: 6.911493}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.48561668, y: 1, z: -1.1980019}
+  m_LocalScale: {x: 0.89999986, y: 0.89999986, z: 0.9}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -59,7 +60,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4b05625c466a60242a9e3ddb3298beca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -125,6 +126,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114419585407626184
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1352117470534648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96309d71465baa249b2e23112628ff50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  caissespawn: {fileID: 0}
 --- !u!114 &114933968174837212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,4 +149,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebc38428c3714264898661030b4e81ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
