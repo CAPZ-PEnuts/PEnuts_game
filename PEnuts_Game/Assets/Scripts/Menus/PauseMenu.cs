@@ -15,7 +15,7 @@ public partial class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUi;
 
-    
+/*
     private NetworkManager networkManager;
 
     void Start()
@@ -30,7 +30,7 @@ public partial class PauseMenu : MonoBehaviour
             networkManager.OnDropConnection);
         networkManager.StopHost();
     }
-    
+*/    
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
