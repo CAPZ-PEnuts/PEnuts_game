@@ -16,7 +16,4 @@ public class boutton : MonoBehaviour
             signal.buttonpush(this);
 
     }
-
-
-    }
 }
