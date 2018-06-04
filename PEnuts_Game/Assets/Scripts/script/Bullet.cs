@@ -6,7 +6,20 @@ using UnityEngine.Networking;
 
 public class Bullet : NetworkBehaviour
 {
+    private GameObject blubox;
+    private GameObject redbox;
 
+    private void Start()
+    {
+        GameObject[] bluboxx = GameObject.FindGameObjectsWithTag("blubox");
+        if(bluboxx.Length != 0)
+            blubox = bluboxx[0];
+        GameObject[] redboxx = GameObject.FindGameObjectsWithTag("redbox");
+        if (redboxx.Length != 0)
+            redbox = redboxx[0];
+        if (redboxx.Length != 0 && redbox.activeInHierarchy)
+            gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
+    }
     public bool Degatred = true; 
     void OnCollisionEnter(Collision collision)
     {
@@ -14,14 +27,18 @@ public class Bullet : NetworkBehaviour
         if (Degatred)
         {
             var hit = collision.gameObject;
-            var health = hit.GetComponent<Health>();
-            var etas = hit.GetComponent<enemicontroller>();
-            if (health != null)
+            if (redbox!= null && redbox.activeInHierarchy)
             {
-                health.TakeDamage(10);
-                etas.etas(); 
+                var health = hit.GetComponent<Health>();
+                if (health != null)
+                    health.TakeDamage(10);
             }
-            
+            else
+            {
+                var etas = hit.GetComponent<enemicontroller>();
+                if (etas != null)
+                    etas.etas();
+            }
         }
 
         Destroy(gameObject);
