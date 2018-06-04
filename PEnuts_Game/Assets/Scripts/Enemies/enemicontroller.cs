@@ -1,12 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics.Eventing.Reader;
 using System.Net.Configuration;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Experimental.Audio.Google;
 using Vuforia;
-
+ 
 public class enemicontroller : MonoBehaviour
 {
 
@@ -41,7 +40,8 @@ public class enemicontroller : MonoBehaviour
 		darknest.SetActive(true);
 		darkskull.SetActive(false);
 		darkmagic.SetActive(true);
-		boom.SetActive(false); 
+        if(boom!=null)
+		    boom.SetActive(false); 
 	}
 	
 	// Update is called once per frame
@@ -69,13 +69,13 @@ public class enemicontroller : MonoBehaviour
 		}
 		
 		//float distance = Vector3.Distance(player.transform.position, transform.position);
-		if (distance <= lookradius)
+		if (distance <= lookradius && gameplayer.Length != 0)
 		{
 			//transform.LookAt(player.transform);
 			agent.SetDestination(player.transform.position);
 			lumiere.SetActive(true);
 		}
-		else if(etas1)
+		else //if(etas1)
 		{
 			lumiere.SetActive(false);
 			agent.SetDestination(spwanmechant.transform.position); 
@@ -83,22 +83,30 @@ public class enemicontroller : MonoBehaviour
 		
 		if (etas1)
 		{
-			virus.SetActive(false);
-			darknest.SetActive(true);
-			darkskull.SetActive(false);
-			darkmagic.SetActive(true);
+            if (virus != null)
+                virus.SetActive(false);
+            if (darknest != null)
+                darknest.SetActive(true);
+            if (darkskull != null)
+                darkskull.SetActive(false);
+            if(darkmagic != null)
+			    darkmagic.SetActive(true);
 		}
 		else
 		{
-			virus.SetActive(true);
-			darknest.SetActive(false);
-			darkskull.SetActive(true);
-			darkmagic.SetActive(false);
+            if (virus != null)
+                virus.SetActive(true);
+            if (darknest != null)
+                darknest.SetActive(false);
+            if (darkskull != null)
+                darkskull.SetActive(true);
+            if (darkmagic != null)
+                darkmagic.SetActive(false);
 		}
 
 		if (distance < distance_de_degat)
 		{
-			if (Time.time > next_degat)
+			if (Time.time > next_degat && gameplayer.Length != 0)
 			{
 				Debug.Log("degat");
 				var hit = player;
