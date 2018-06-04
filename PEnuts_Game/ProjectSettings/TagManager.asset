@@ -15,6 +15,7 @@ TagManager:
   - tp
   - redbox
   - blubox
+  - NetworkPlayer
   layers:
   - Default
   - TransparentFX

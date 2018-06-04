@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using  UnityEngine.Networking; 
+using  UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class Health : NetworkBehaviour 
 {
@@ -25,6 +26,7 @@ public class Health : NetworkBehaviour
             {
                 currentHealth = maxhealth;
                 RpcRspawn();
+                NetworkManager.singleton.ServerChangeScene(SceneManager.GetActiveScene().name);
                 Debug.Log("dead!");
             }
         }
@@ -38,6 +40,7 @@ public class Health : NetworkBehaviour
     [ClientRpc]
     void RpcRspawn()
     {
+
         if (gameObject.tag == "Monster")
         {
             Destroy(gameObject);

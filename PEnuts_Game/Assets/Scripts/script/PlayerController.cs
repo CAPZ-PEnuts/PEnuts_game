@@ -5,6 +5,9 @@ using UnityEngine.Networking;
 
 public class PlayerController : NetworkBehaviour
 {
+
+    public bool local = false;
+
     public GameObject playercolor;
     public GameObject balleprefab;
     public Transform bulletspawn;
@@ -19,7 +22,7 @@ public class PlayerController : NetworkBehaviour
     private float nextfire = 0f;
     void Update()
     {
-        if (isLocalPlayer)
+        if (local)
         {
             /*
             if (condition)
@@ -32,7 +35,7 @@ public class PlayerController : NetworkBehaviour
             }
             */
             var z = Input.GetAxis("Horizontal") ;
-            var x = Input.GetAxis("Vertical") * Time.deltaTime * speedmov; 
+            var x = Input.GetAxis("Vertical") * Time.deltaTime * speedmov;
             transform.position += transform.up * Time.deltaTime * speedjump * Input.GetAxis("Jump"); 
             //transform.Rotate(0, z*90, 0);
             transform.Translate(0, 0, x); 
@@ -56,7 +59,7 @@ public class PlayerController : NetworkBehaviour
             }
             
         }
-        else if(!isLocalPlayer)
+        else
         {
             playercolor.GetComponent<MeshRenderer>().material.color = Color.red;
         }

@@ -1,15 +1,15 @@
-﻿using System;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Networking;
 using UnityEngine.Networking.Match;
+using UnityEngine.UI;
 
-public class JoinGame : MonoBehaviour
-{
-    
-    private Text status;
+public class Lobby : MonoBehaviour {
+
+    public Text status;
+    public InputField roomName;
     private NetworkManager networkManager;
 
     void Start()
@@ -22,6 +22,33 @@ public class JoinGame : MonoBehaviour
 
         InvokeRepeating("RefreshRoomList", 0, 3f);
     }
+
+    /**
+     * MATCH CREATION
+     **/
+
+    public void OnMatchCreate()
+    {
+        var name = roomName.GetComponent<InputField>().text;
+        roomName.GetComponent<InputField>().text = "";
+        if (name != null)
+        {
+            networkManager.matchMaker.CreateMatch(name, 2, true, "", "", "", 0, 0, OnMatchCreated);
+            RefreshRoomList();
+        }
+    }
+
+    public void OnMatchCreated(bool success, string extendedInfo, MatchInfo matchInfo)
+    {
+        if (success)
+        {
+            networkManager.StartHost(matchInfo);
+        }
+    }
+
+    /**
+     * MATCH JOIN
+     **/
 
     public void RefreshRoomList()
     {
@@ -40,7 +67,7 @@ public class JoinGame : MonoBehaviour
 
 
         int id = 1;
-        
+
         foreach (var match in matchList)
         {
             var roomGameObject = GameObject.Find("room_" + id);
@@ -59,9 +86,9 @@ public class JoinGame : MonoBehaviour
         //status.text
         if (id == 1)
             status.text = "No rooms for the time...";
-        
+
         else
-            status.text = "[" + (id-1) + "/10] rooms";
+            status.text = "[" + (id - 1) + "/10] rooms";
 
         //disable empty rooms
         while (id <= 10)
@@ -79,4 +106,5 @@ public class JoinGame : MonoBehaviour
         if (success)
             networkManager.StartClient(matchInfo);
     }
+
 }

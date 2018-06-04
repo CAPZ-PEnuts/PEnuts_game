@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Net.Configuration;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Experimental.Audio.Google;
-using Vuforia;
+//using UnityEngine.Experimental.Audio.Google;
+//using Vuforia;
  
 public class enemicontroller : MonoBehaviour
 {

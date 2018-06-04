@@ -10,14 +10,11 @@ public class ColorSelectMenu : MonoBehaviour {
 	
 	public GameObject redbox;
 	
-	public GameObject multi;
-	
 	public GameObject ColorSelectorCanvas;
     
 	private void Start()
 	{
-		if(multi.activeInHierarchy)
-			multi.SetActive(false);
+
 	}
     
 	// Use this for initialization
@@ -25,7 +22,6 @@ public class ColorSelectMenu : MonoBehaviour {
 	{
 		bluebox.SetActive(true);
 		redbox.SetActive(false);
-		multi.SetActive(true);
 		ColorSelectorCanvas.SetActive(false);
 	}
 
@@ -33,7 +29,6 @@ public class ColorSelectMenu : MonoBehaviour {
 	{
 		bluebox.SetActive(false);
 		redbox.SetActive(true);
-		multi.SetActive(true);
 		ColorSelectorCanvas.SetActive(false);
 	}
 	
