@@ -8,7 +8,7 @@ public class tpvector0 : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gameObject.tag == "player")
+		if (other.gameObject.tag == "Player")
 			other.transform.position = where2go;
 	}
 }
