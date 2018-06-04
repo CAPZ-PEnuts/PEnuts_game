@@ -30,5 +30,10 @@ public class FinishMenu : MonoBehaviour
 	{
 		Application.Quit();
 	}
+
+    public void website(string websiteName)
+    {
+        Application.OpenURL(websiteName);
+    }
 }
 
