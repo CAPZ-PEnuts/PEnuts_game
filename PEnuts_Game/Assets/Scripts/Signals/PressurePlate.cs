@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditorInternal;
 using UnityEngine;
 
 public class PressurePlate : MonoBehaviour
@@ -10,10 +11,12 @@ public class PressurePlate : MonoBehaviour
 	public GameObject signalHandelerObject;
 	private int _counter;
 	private bool _state;
+	private bool _colorUpdated;
 	
 	// Use this for initialization
 	void Start ()
 	{
+		_colorUpdated = false;
 		_counter = 0;
 		_state = false;
 	}
@@ -39,6 +42,11 @@ public class PressurePlate : MonoBehaviour
 		if (_counter > 0)
 			_counter--;
 		
+		if (!_colorUpdated)
+		{
+			_colorUpdated = true;
+			gameObject.GetComponent<Renderer>().material.SetColor("_Color",signalHandelerObject.GetComponent<SignalHandeler>().GetSignalColor(signal));
+		}
 	}
 
 	private void OnTriggerStay(Collider other)
