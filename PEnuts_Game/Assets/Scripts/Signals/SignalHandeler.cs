@@ -102,8 +102,9 @@ public class SignalHandeler : MonoBehaviour
 		}
 		else
 		{
-			//Debug.Log("SignalHandeler.GetSignal: signal \"" + name + "\" doesn't exists!");
-			return false;
+            AddSignal(name, false);
+            //Debug.Log("SignalHandeler.GetSignal: signal \"" + name + "\" doesn't exists!");
+            return false;
 		}
 	}
 
@@ -115,8 +116,10 @@ public class SignalHandeler : MonoBehaviour
         }
         else
         {
+            AddSignal(name, false);
+
             //Debug.Log("SignalHandeler.GetSignalColor: signal \"" + name + "\" doesn't exists!");
-            return new Color(0,0,0);
+            return GetSignalColor(name);
         }
     }
 

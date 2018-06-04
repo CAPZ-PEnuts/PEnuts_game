@@ -14,17 +14,32 @@ public class Laser : MonoBehaviour {
 	public GameObject laser6;
 
 	private bool _state;
+
+    private bool _colorUpdated;
 	
 	// Use this for initialization
 	void Start ()
 	{
 		_state = false;
-		
+        _colorUpdated = false;
 	}
 	
 	// Update is called once per frame
 	void Update()
 	{
+        if (!_colorUpdated)
+        {
+            _colorUpdated = true;
+
+            Color color = signalHandelerObject.GetComponent<SignalHandeler>().GetSignalColor(signal);
+
+            laser1.GetComponent<Material>().SetColor("_Color", color);
+            laser2.GetComponent<Material>().SetColor("_Color", color);
+            laser3.GetComponent<Material>().SetColor("_Color", color);
+            laser4.GetComponent<Material>().SetColor("_Color", color);
+            laser5.GetComponent<Material>().SetColor("_Color", color);
+            laser6.GetComponent<Material>().SetColor("_Color", color);
+        }
 	}
 
 	private void OnTriggerStay(Collider other)
