@@ -6,15 +6,24 @@ using UnityEngine.Networking;
 
 public class Bullet : NetworkBehaviour
 {
+
+    public bool Degatred = true; 
     void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("yes");
-        var hit = collision.gameObject; 
-        var health = hit.GetComponent<Health>();
-        if (health != null)
+        Debug.Log("hit");
+        if (Degatred)
         {
-            health.TakeDamage(10);
+            var hit = collision.gameObject;
+            var health = hit.GetComponent<Health>();
+            var etas = hit.GetComponent<enemicontroller>();
+            if (health != null)
+            {
+                health.TakeDamage(10);
+                etas.etas(); 
+            }
+            
         }
+
         Destroy(gameObject);
     }
 }

@@ -7,6 +7,9 @@ TagManager:
   - Monster
   - Caisse
   - Killzone
+  - FxTemporaire
+  - blueball
+  - Corps
   layers:
   - Default
   - TransparentFX
