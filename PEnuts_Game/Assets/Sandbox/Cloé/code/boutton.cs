@@ -12,8 +12,11 @@ public class boutton : MonoBehaviour
 
     {
         if (other.gameObject.tag == "Player")
-            //if (Input.GetKeyDown(KeyCode.F))
+        {
             signal.buttonpush(this);
+            FindObjectOfType<AudioManager>().Play("signalclique");
+        }
+
 
     }
 }

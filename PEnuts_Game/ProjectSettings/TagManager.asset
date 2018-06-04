@@ -10,6 +10,9 @@ TagManager:
   - FxTemporaire
   - blueball
   - Corps
+  - player
+  - camera2
+  - tp
   layers:
   - Default
   - TransparentFX

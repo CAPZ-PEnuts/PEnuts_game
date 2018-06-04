@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.Serialization.Formatters;
 using UnityEngine;
 
 public class tpvector0 : MonoBehaviour {
@@ -9,6 +8,7 @@ public class tpvector0 : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other)
 	{
-		other.transform.position = where2go;
+		if (other.gameObject.tag == "Player")
+			other.transform.position = where2go;
 	}
 }
