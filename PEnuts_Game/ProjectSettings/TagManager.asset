@@ -7,6 +7,10 @@ TagManager:
   - Monster
   - Caisse
   - Killzone
+  - FxTemporaire
+  - player
+  - camera2
+  - tp
   layers:
   - Default
   - TransparentFX
