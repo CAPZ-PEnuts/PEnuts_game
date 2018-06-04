@@ -6,15 +6,74 @@ using UnityEngine;
 public class SignalHandeler : MonoBehaviour
 {
 
+    public enum SignalColor
+    {
+        BLUE1,
+        RED1,
+        YELLOW1,
+        GREEN1,
+        CYAN1,
+        PINK1
+
+    };
+
+    public static Color getColor(SignalColor col)
+    {
+        Color color = new Color(255, 255, 255);
+
+        switch (col)
+        {
+            case SignalColor.BLUE1:
+                color = new Color(0, 0, 255);
+                break;
+            case SignalColor.RED1:
+                color = new Color(255, 0, 0);
+                break;
+            case SignalColor.YELLOW1:
+                color = new Color(255, 255, 0);
+                break;
+            case SignalColor.GREEN1:
+                color = new Color(0, 255, 0);
+                break;
+            case SignalColor.CYAN1:
+                color = new Color(0, 255, 255);
+                break;
+            case SignalColor.PINK1:
+                color = new Color(255, 0, 255);
+                break;
+        }
+
+        return color;
+    }
+
+    private static Dictionary<string, SignalColor> _colors;
 	private static Dictionary<string,int> _signals;
+
+    private static List<SignalColor> _colortape;
+
+    private static int _colcount;
 	
 	// Use this for initialization
 	void Start () {
 		_signals = new Dictionary<string, int>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        _colors = new Dictionary<string, SignalColor>();
+
+        _colcount = 0;
+
+
+        _colortape = new List<SignalColor>();
+
+        _colortape.Add(SignalColor.BLUE1);
+        _colortape.Add(SignalColor.RED1);
+        _colortape.Add(SignalColor.YELLOW1);
+        _colortape.Add(SignalColor.GREEN1);
+        _colortape.Add(SignalColor.PINK1);
+        _colortape.Add(SignalColor.CYAN1);
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
@@ -25,6 +84,8 @@ public class SignalHandeler : MonoBehaviour
 		if (!_signals.ContainsKey(name))
 		{
 			_signals.Add(name, state? 1 : 0);
+            _colors.Add(name, _colortape[_colcount]);
+            _colcount = (_colcount + 1) % 6;
 		}
 		else
 		{
@@ -45,6 +106,19 @@ public class SignalHandeler : MonoBehaviour
 			return false;
 		}
 	}
+
+    public Color GetSignalColor(string name)
+    {
+        if (Exists(name))
+        {
+            return getColor(_colors[name]);
+        }
+        else
+        {
+            //Debug.Log("SignalHandeler.GetSignalColor: signal \"" + name + "\" doesn't exists!");
+            return new Color(0,0,0);
+        }
+    }
 
 	public bool Exists(string name)
 	{
