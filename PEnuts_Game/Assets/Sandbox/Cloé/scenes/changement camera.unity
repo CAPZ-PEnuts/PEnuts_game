@@ -416,7 +416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 740dd0d15d7baa14fbb930aa5a90397e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  where2go: {x: 19, y: 1.5, z: 19}
+  where2go: {x: -11, y: 1.5, z: 2}
 --- !u!23 &1838062876
 MeshRenderer:
   m_ObjectHideFlags: 0
