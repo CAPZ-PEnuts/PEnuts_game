@@ -39,4 +39,9 @@ public class LevelSelect : MonoBehaviour {
         }
     }
 
+    public void Quit()
+    {
+        Application.Quit();
+    }
+    
 }

@@ -15,8 +15,17 @@ public class teleportation : NetworkBehaviour
         if (pc != null)
         {
             Debug.Log("Teleported");
-            SceneManager.LoadScene(scenename);
             
+            //SceneManager.LoadScene(scenename);
+
+            foreach (GameObject p in GameObject.FindGameObjectsWithTag("NetworkPlayer"))
+            {
+                NetworkPlayer player = p.GetComponent<NetworkPlayer>();
+                if (player.id == 1)
+                {
+                    player.ChangeScene(scenename);
+                }
+            }
         }
     }
 }

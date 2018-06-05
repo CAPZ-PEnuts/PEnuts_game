@@ -32,6 +32,18 @@ public class ColorSelectMenu : MonoBehaviour {
 		ColorSelectorCanvas.SetActive(false);
 	}
 	
+	public void GoToLevel(string name)
+	{
+		foreach (GameObject p in GameObject.FindGameObjectsWithTag("NetworkPlayer"))
+		{
+			NetworkPlayer player = p.GetComponent<NetworkPlayer>();
+			if (player.id == 1)
+			{
+				player.ChangeScene(name);
+			}
+		}
+	}
+	
 	public void LoadMenu(string Menu)
 	{
 		SceneManager.LoadScene(Menu);

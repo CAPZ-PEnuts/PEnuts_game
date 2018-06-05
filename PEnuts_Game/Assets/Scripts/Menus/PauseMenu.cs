@@ -56,6 +56,18 @@ public partial class PauseMenu : MonoBehaviour
         GameIsPaused = true;
     }
 
+    public void GoToLevel(string name)
+    {
+        foreach (GameObject p in GameObject.FindGameObjectsWithTag("NetworkPlayer"))
+        {
+            NetworkPlayer player = p.GetComponent<NetworkPlayer>();
+            if (player.id == 1)
+            {
+                player.ChangeScene(name);
+            }
+        }
+    }
+    
     public void LoadMenu(string Menu)
     {
         Time.timeScale = 1f;

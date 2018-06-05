@@ -51,16 +51,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 370ef99b0dff7a84183b483d3ff53703, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mixerGroup: {fileID: 0}
+  mixerGroup: {fileID: 24300002, guid: e75dc9e991ad1ac4487bf0d4dd3af5c9, type: 2}
   sounds:
   - name: Theme
     clip: {fileID: 8300000, guid: 8c3afdbbbb53c9d41bab7e2ff8f4fba7, type: 3}
     volume: 0.505
     volumeVariance: 0.425
-    pitch: 1.76
-    pitchVariance: 0.287
+    pitch: 1.39
+    pitchVariance: 0.248
     loop: 1
-    mixerGroup: {fileID: 24300002, guid: e75dc9e991ad1ac4487bf0d4dd3af5c9, type: 2}
+    mixerGroup: {fileID: 243334266040550644, guid: e75dc9e991ad1ac4487bf0d4dd3af5c9,
+      type: 2}
     source: {fileID: 0}
   - name: signalclique
     clip: {fileID: 8300000, guid: 8c3afdbbbb53c9d41bab7e2ff8f4fba7, type: 3}
@@ -69,5 +70,6 @@ MonoBehaviour:
     pitch: 1.76
     pitchVariance: 0.287
     loop: 0
-    mixerGroup: {fileID: 24300002, guid: e75dc9e991ad1ac4487bf0d4dd3af5c9, type: 2}
+    mixerGroup: {fileID: 243090017586493636, guid: e75dc9e991ad1ac4487bf0d4dd3af5c9,
+      type: 2}
     source: {fileID: 0}

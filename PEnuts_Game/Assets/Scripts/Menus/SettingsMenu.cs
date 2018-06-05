@@ -7,10 +7,7 @@ using UnityEngine.UI;
 public class SettingsMenu : MonoBehaviour
 {
 
-    public AudioMixer MasterMixer;
-    public AudioMixer MusicMixer;
-    public AudioMixer EffectMixer;
-
+    public AudioMixer MainMixer;
 
     public string nameMasterVolume;
     public string nameMusicVolume;
@@ -31,10 +28,11 @@ public class SettingsMenu : MonoBehaviour
         List<string> options = new List<string>();
 
         int currentResolutionIndex = 0;
-        for (int i = 0; i < resolutions.Length; i++)
+        for (int i = resolutions.Length - 1; i >= 0; i--)
         {
             string option = resolutions[i].width + " x " + resolutions[i].height;
-            options.Add(option);
+            if (i !=resolutions.Length - 1 && resolutions[i].width != resolutions[i+1].width && resolutions[i].height != resolutions[i+1].height)
+                options.Add(option);
 
             if (resolutions[i].width == Screen.currentResolution.width &&
                 resolutions[i].height == Screen.currentResolution.height)
@@ -57,17 +55,17 @@ public class SettingsMenu : MonoBehaviour
     
     public void SetMasterVolume(float volume)
     {
-        MasterMixer.SetFloat(nameMasterVolume, volume);
+        MainMixer.SetFloat(nameMasterVolume, volume);
     }
     
     public void SetMusicVolume(float volume)
     {
-        MusicMixer.SetFloat(nameMusicVolume, volume);
+        MainMixer.SetFloat(nameMusicVolume, volume);
     }    
     
     public void SetEffectVolume(float volume)
     {
-        EffectMixer.SetFloat(nameEffectVolume, volume);
+        MainMixer.SetFloat(nameEffectVolume, volume);
     }
 
     public void SetQuality(int qualityIndex)

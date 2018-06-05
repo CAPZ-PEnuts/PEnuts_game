@@ -9,14 +9,11 @@ using UnityEngine.SceneManagement;
 public class FinishMenu : MonoBehaviour
 {
 
-	private GameObject multi;
-
 	public void LoadMenu(string Menu)
 	{
 		Time.timeScale = 1f;
 		SceneManager.LoadScene(Menu);
 		NetworkManager.Shutdown();
-		multi.SetActive(false);
 		/*
 		MatchInfo matchInfo = networkManager.matchInfo;
 		networkManager.matchMaker.DropConnection(matchInfo.networkId, matchInfo.nodeId, 0,
@@ -25,6 +22,17 @@ public class FinishMenu : MonoBehaviour
 		 */
 	}
     
+	public void GoToLevel(string name)
+	{
+		foreach (GameObject p in GameObject.FindGameObjectsWithTag("NetworkPlayer"))
+		{
+			NetworkPlayer player = p.GetComponent<NetworkPlayer>();
+			if (player.id == 1)
+			{
+				player.ChangeScene(name);
+			}
+		}
+	}
     
 	public void Quit()
 	{

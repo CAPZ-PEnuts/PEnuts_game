@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 65350892032990058}
   - component: {fileID: 114085278718735728}
   m_Layer: 0
-  m_Name: mechant
+  m_Name: mechant-old
   m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1046,6 +1046,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookradius: 2.5
   lumiere: {fileID: 1990649191693994}
+  virus: {fileID: 0}
+  boom: {fileID: 0}
+  darknest: {fileID: 0}
+  darkskull: {fileID: 0}
+  darkmagic: {fileID: 0}
+  etas1: 1
   cadence_de_degat: 2
   distance_de_degat: 1
   spwanmechant: {fileID: 0}

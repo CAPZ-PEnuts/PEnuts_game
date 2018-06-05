@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 114165132215761498}
   - component: {fileID: 114718622487286988}
   m_Layer: 5
-  m_Name: MenuButton
+  m_Name: LevelButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -227,8 +227,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: f52d5f42522745645b73ffca446419a2, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -446,7 +446,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Menu
+  m_text: Level Select
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 99cc0d8c00e04cc408f32c08d42b4ed5, type: 2}
   m_sharedMaterial: {fileID: 21108988282468048, guid: 99cc0d8c00e04cc408f32c08d42b4ed5,
@@ -514,12 +514,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 114228516504426814}
-    characterCount: 4
+    characterCount: 12
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 1
+    spaceCount: 1
+    wordCount: 2
     linkCount: 0
-    lineCount: 1
+    lineCount: 2
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 1
@@ -786,9 +786,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c9fde36fa1d7a49b19e3d3ced28127, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bluebox: {fileID: 1656778814710520, guid: b335261aa9ef78a4f8927487a0e53da9, type: 2}
-  redbox: {fileID: 1931643748240002, guid: 02f6d88c5d5a58d45827228ff50915c1, type: 2}
-  multi: {fileID: 1755025957078128, guid: 8f6b71fa4a61dd14ba206c2f517db4fc, type: 2}
+  bluebox: {fileID: 0}
+  redbox: {fileID: 0}
   ColorSelectorCanvas: {fileID: 1403770129481010}
 --- !u!114 &114659759730648302
 MonoBehaviour:
@@ -916,7 +915,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Menu
+          m_StringArgument: LevelSelect
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -1178,7 +1177,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000030517, y: -91}
+  m_AnchoredPosition: {x: -0.000030517, y: -136}
   m_SizeDelta: {x: 100.9, y: 54.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224529368228338046
@@ -1257,8 +1256,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000057216, y: -41}
-  m_SizeDelta: {x: 100.9, y: 54.6}
+  m_AnchoredPosition: {x: 0.000024796, y: -45.9}
+  m_SizeDelta: {x: 130, y: 78.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224861357172461540
 RectTransform:
