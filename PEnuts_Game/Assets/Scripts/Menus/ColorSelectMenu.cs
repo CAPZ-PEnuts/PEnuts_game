@@ -20,15 +20,23 @@ public class ColorSelectMenu : MonoBehaviour {
 	// Use this for initialization
 	public void BlueVision()
 	{
-		bluebox.SetActive(true);
-		redbox.SetActive(false);
+		if (bluebox != null)
+			bluebox.SetActive(true);
+		
+		if (redbox != null)
+			redbox.SetActive(false);
+		
 		ColorSelectorCanvas.SetActive(false);
 	}
 
 	public void RedVision()
 	{
-		bluebox.SetActive(false);
-		redbox.SetActive(true);
+		if (bluebox != null)
+			bluebox.SetActive(false);
+		
+		if (redbox != null)
+			redbox.SetActive(true);
+		
 		ColorSelectorCanvas.SetActive(false);
 	}
 	
