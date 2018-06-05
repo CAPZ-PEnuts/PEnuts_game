@@ -76,6 +76,7 @@ public class Lobby : MonoBehaviour {
             roomGameObject.GetComponentInChildren<TextMeshProUGUI>().SetText(match.name);
             roomGameObject.gameObject.SetActive(true);
             roomGameObject.onClick.RemoveAllListeners();
+            //Debug.Log(roomGameObject.GetComponent<Button>());
             roomGameObject.onClick.AddListener(
                 delegate
                 {

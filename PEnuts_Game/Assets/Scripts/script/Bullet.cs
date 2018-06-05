@@ -6,23 +6,32 @@ using UnityEngine.Networking;
 
 public class Bullet : NetworkBehaviour
 {
-   // private GameObject blubox;
-   // private GameObject redbox;
+    // private GameObject blubox;
+    // private GameObject redbox;
+   
+    public bool isblue = true;
 
-  //  public GameObject Player; 
     private void Start()
     {
-        gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
+        if(!isblue)
+        {
+            Debug.Log("ALORS2" + isblue);
+            gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
+        }
         /*
         GameObject[] bluboxx = GameObject.FindGameObjectsWithTag("blubox");
         if(bluboxx.Length != 0)
             blubox = bluboxx[0];
+            
         GameObject[] redboxx = GameObject.FindGameObjectsWithTag("redbox");
         if (redboxx.Length != 0)
             redbox = redboxx[0];
-        if (redboxx.Length != 0 && redbox.activeInHierarchy )
+            
+        if (redboxx.Length != 0 && redbox.activeInHierarchy && player.GetComponent<NetworkIdentity>().isLocalPlayer)
             gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
         */
+
+
     }
     public bool Degatred = true; 
     void OnCollisionEnter(Collision collision)
@@ -31,9 +40,18 @@ public class Bullet : NetworkBehaviour
         if (Degatred)
         {
             var hit = collision.gameObject;
-            var health = hit.GetComponent<Health>();
-            if (health != null)
-                health.TakeDamage(10);
+            if (isblue)
+            {
+                var etas = hit.GetComponent<enemicontroller>();
+                if (etas != null)
+                    etas.etas();
+            }
+            else
+            {
+                var health = hit.GetComponent<Health>();
+                if (health != null)
+                    health.TakeDamage(10);
+            }
         }
 
         Destroy(gameObject);
@@ -60,4 +78,5 @@ public class Bullet : NetworkBehaviour
         Destroy(gameObject);
         */
     }
+
 }

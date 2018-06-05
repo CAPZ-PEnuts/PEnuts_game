@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\epita\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_PEnuts_Game.-1990502284.00" t="ExcludeRecursive" />
-    <e p="C:\Users\epita\Documents\GitHub\PEnuts\PEnuts_Game" t="IncludeRecursive">
+    <e p="C:\Users\ziane layadi\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_PEnuts_Game.-343945436.00" t="ExcludeRecursive" />
+    <e p="C:\Users\ziane layadi\Desktop\PEnuts ziane update1\PEnuts_Game" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Particles" t="Include">
+        <e p="loadScene.cs" t="Include" />
+        <e p="particul" t="Include">
           <e p="JMO Assets" t="Include">
             <e p="!JMO Assets Readme.txt" t="Include" />
             <e p="Cartoon FX" t="Include">
@@ -49,6 +50,7 @@
             <e p="README.txt" t="Include" />
           </e>
         </e>
+        <e p="playerspawn.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">
@@ -64,6 +66,14 @@
                 <e p="InstanceStart.cs" t="Include" />
                 <e p="Map.cs" t="Include" />
               </e>
+              <e p="Signals 1" t="Include">
+                <e p="Door.cs" t="Include" />
+                <e p="GateAND.cs" t="Include" />
+                <e p="GateNot.cs" t="Include" />
+                <e p="Laser.cs" t="Include" />
+                <e p="PressurePlate.cs" t="Include" />
+                <e p="SignalHandeler.cs" t="Include" />
+              </e>
             </e>
           </e>
           <e p="Cloé" t="Include">
@@ -72,64 +82,79 @@
               <e p="boutton.cs" t="Include" />
               <e p="caissePlayer.cs" t="Include" />
               <e p="camera.cs" t="Include" />
-              <e p="changercamera.cs" t="Include" />
               <e p="cubemouv.cs" t="Include" />
               <e p="displaytext.cs" t="Include" />
               <e p="mouv.cs" t="Include" />
               <e p="pattern.cs" t="Include" />
               <e p="rendererenable.cs" t="Include" />
               <e p="signalhandlorder.cs" t="Include" />
-              <e p="tpvector0.cs" t="Include" />
+              <e p="respawncube.cs" t="Include" />
               <e p="vision.cs" t="Include" />
+            </e>
+          </e>
+          <e p="pierrick" t="Include">
+            <e p="Menu" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="ColorSelectMenu.cs" t="Include" />
+                <e p="FinishMenu.cs" t="Include" />
+                <e p="lobby" t="Include">
+                  <e p="HostGame.cs" t="Include" />
+                  <e p="JoinGame.cs" t="Include" />
+                </e>
+                <e p="MainMenu.cs" t="Include" />
+                <e p="PauseMenu.cs" t="Include" />
+                <e p="SettingsMenu.cs" t="Include" />
+              </e>
+            </e>
+            <e p="PauseMenu.cs" t="Include" />
+            <e p="TextMesh Pro" t="Include">
+              <e p="Resources" t="Include">
+                <e p="LineBreaking Following Characters.txt" t="Include" />
+                <e p="LineBreaking Leading Characters.txt" t="Include" />
+                <e p="Shaders" t="Include">
+                  <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+                  <e p="TMP_Bitmap.shader" t="Include" />
+                  <e p="TMP_SDF Overlay.shader" t="Include" />
+                  <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+                  <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+                  <e p="TMP_SDF-Mobile.shader" t="Include" />
+                  <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+                  <e p="TMP_SDF-Surface.shader" t="Include" />
+                  <e p="TMP_SDF.shader" t="Include" />
+                  <e p="TMP_Sprite.shader" t="Include" />
+                  <e p="TMPro.cginc" t="Include" />
+                  <e p="TMPro_Properties.cginc" t="Include" />
+                  <e p="TMPro_Surface.cginc" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+          <e p="Ziane" t="Include">
+            <e p="code" t="Include">
+              <e p="echap.cs" t="Include" />
+              <e p="openscene.cs" t="Include" />
+              <e p="quit.cs" t="Include" />
+              <e p="scenechanger.cs" t="Include" />
             </e>
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="AudioManager" t="Include">
-            <e p="AudioManager.cs" t="Include" />
-            <e p="Sound.cs" t="Include" />
-          </e>
-          <e p="Enemies" t="Include">
-            <e p="CORPS.cs" t="Include" />
-            <e p="enemicontroller.cs" t="Include" />
-            <e p="Mechat_controller.cs" t="Include" />
-          </e>
-          <e p="LevelSelect.cs" t="Include" />
-          <e p="loadScene.cs" t="Include" />
-          <e p="Menus" t="Include">
-            <e p="ColorSelectMenu.cs" t="Include" />
-            <e p="FinishMenu.cs" t="Include" />
-            <e p="lobby" t="Include">
-              <e p="HostGame.cs" t="Include" />
-              <e p="JoinGame.cs" t="Include" />
-            </e>
-            <e p="Lobby.cs" t="Include" />
-            <e p="MainMenu.cs" t="Include" />
-            <e p="PauseMenu.cs" t="Include" />
-            <e p="SettingsMenu.cs" t="Include" />
-          </e>
-          <e p="NetworkPlayer.cs" t="Include" />
-          <e p="playerspawn.cs" t="Include" />
-          <e p="SceneInfo.cs" t="Include" />
+          <e p="NewBehaviourScript.cs" t="Include" />
           <e p="script" t="Include">
             <e p="billboard.cs" t="Include" />
             <e p="Bullet.cs" t="Include" />
             <e p="degat.cs" t="Include" />
+            <e p="enemicontroller.cs" t="Include" />
             <e p="Health.cs" t="Include" />
             <e p="kilzone.cs" t="Include" />
+            <e p="Mechat_controller.cs" t="Include" />
             <e p="particuleactivatide.cs" t="Include" />
             <e p="PlayerController.cs" t="Include" />
-            <e p="respawncube.cs" t="Include" />
+            <e p="portail.cs" t="Include" />
             <e p="teleportation.cs" t="Include" />
-          </e>
-          <e p="Server.cs" t="Include" />
-          <e p="Signals" t="Include">
-            <e p="Door.cs" t="Include" />
-            <e p="GateAND.cs" t="Include" />
-            <e p="GateNot.cs" t="Include" />
-            <e p="Laser.cs" t="Include" />
-            <e p="PressurePlate.cs" t="Include" />
-            <e p="SignalHandeler.cs" t="Include" />
+            <e p="tpvector0.cs" t="Include" />
+            <e p="visionblue.cs" t="Include" />
+            <e p="visionred_.cs" t="Include" />
           </e>
         </e>
         <e p="SD_Character" t="Include">
