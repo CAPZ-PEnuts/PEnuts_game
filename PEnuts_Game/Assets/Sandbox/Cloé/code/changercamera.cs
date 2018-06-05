@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class changercamera : NetworkBehaviour {
 
-    Camera Main;
-    Camera cameraToGo;
+    public Camera Main;
+    public Camera cameraToGo;
 
     public void Start()
     {
@@ -19,10 +19,10 @@ public class changercamera : NetworkBehaviour {
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (isLocalPlayer && other.gameObject.tag == "tp")
+        if (other.gameObject.tag == "tp")
         {
-            Main.enabled = !Main.enabled;
-            cameraToGo.enabled = !cameraToGo.enabled; 
+          Main.enabled = !Main.enabled;
+          cameraToGo.enabled = !cameraToGo.enabled;
         }
     }
 
