@@ -24,22 +24,22 @@ public class SignalHandeler : MonoBehaviour
         switch (col)
         {
             case SignalColor.BLUE1:
-                color = new Color(0, 0, 255);
+                color = new Color(44, 65, 206);
                 break;
             case SignalColor.RED1:
-                color = new Color(255, 0, 0);
+                color = new Color(225, 65, 60);
                 break;
             case SignalColor.YELLOW1:
-                color = new Color(255, 255, 0);
+                color = new Color(202, 203, 50);
                 break;
             case SignalColor.GREEN1:
-                color = new Color(0, 255, 0);
+                color = new Color(102, 147, 0);
                 break;
             case SignalColor.CYAN1:
-                color = new Color(0, 255, 255);
+                color = new Color(78, 178, 214);
                 break;
             case SignalColor.PINK1:
-                color = new Color(255, 0, 255);
+                color = new Color(247, 87, 171);
                 break;
         }
 
