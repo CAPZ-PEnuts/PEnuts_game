@@ -14,7 +14,9 @@ public class Lobby : MonoBehaviour {
 
     void Start()
     {
-        networkManager = NetworkManager.singleton;
+        networkManager = GameObject.Find("NetworkManager").GetComponent<Server>();
+
+        //networkManager = NetworkManager.singleton;
         if (networkManager.matchMaker == null)
         {
             networkManager.StartMatchMaker();
@@ -73,7 +75,7 @@ public class Lobby : MonoBehaviour {
             var roomGameObject = GameObject.Find("room_" + id);
             roomGameObject.GetComponentInChildren<TextMeshProUGUI>().SetText(match.name);
             roomGameObject.GetComponent<Button>().gameObject.SetActive(true);
-            roomGameObject.GetComponent<Button>().onClick.RemoveAllListeners();
+            //roomGameObject.GetComponent<Button>().onClick.RemoveAllListeners();
             roomGameObject.GetComponent<Button>().onClick.AddListener(
                 delegate
                 {
@@ -96,7 +98,7 @@ public class Lobby : MonoBehaviour {
         {
             var roomGameObject = GameObject.Find("room_" + id);
             roomGameObject.GetComponentInChildren<TextMeshProUGUI>().SetText("");
-            roomGameObject.GetComponent<Button>().onClick.RemoveAllListeners();
+            //roomGameObject.GetComponent<Button>().onClick.RemoveAllListeners();
             //roomGameObject.GetComponent<Button>().gameObject.SetActive(false);
             id++;
         }
