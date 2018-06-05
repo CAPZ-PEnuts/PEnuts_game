@@ -18,14 +18,17 @@ public class PlayerController : NetworkBehaviour
     public float speedjump = 5;
     public float cadence_de_tir = 2f;
 
-    public bool isblu = true;
+    private bool isblu = true;
 
     private float nextfire = 0f;
 
     private void Start()
     {
-        bool color = GameObject.Find("ColorSelectMenu").GetComponent<ColorSelectMenu>().isblue;
-        CmdSetColor(color);
+        if(true)
+        {
+            bool color = GameObject.Find("ColorSelectMenu").GetComponent<ColorSelectMenu>().isblue;
+            CmdSetColor(color);
+        }
     }
     void Update()
     {
@@ -80,28 +83,32 @@ public class PlayerController : NetworkBehaviour
         var bullet = (GameObject)Instantiate(balleprefab, bulletspawn.position, bulletspawn.rotation);
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 15f;
         NetworkServer.Spawn(bullet);
+        //bullet.GetComponent<Bullet>().Isbluee = isblu;
+        Rpcfire(bullet, isblu);
         Destroy(bullet, 2.0f);
-        Rpcfire(bullet,isblu);
+       
     }
+
     [Command]
     void CmdSetColor(bool color)
     {
         RpcSetColor(color);
     }
+
     [ClientRpc]
     void RpcSetColor(bool color)
     {
-       // isblu = color;
+       isblu = color;
     }
+
     [ClientRpc]
-    public void Rpcfire(GameObject ball, bool condition) {
-        Debug.Log("ALORS " + isblu);
-        ball.GetComponent<Bullet>().isblue = condition; 
-    }
+    public void Rpcfire(GameObject ball, bool blublu) {
+        ball.GetComponent<Bullet>().Isbluee = blublu;
+     }
 
     public void Cmdisblue(bool condition)
     {
-        isblu = condition;
+        //isblu = condition;
     }
     public override void OnStartLocalPlayer()   
     {

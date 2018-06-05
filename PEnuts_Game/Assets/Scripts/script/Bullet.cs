@@ -8,14 +8,15 @@ public class Bullet : NetworkBehaviour
 {
     // private GameObject blubox;
     // private GameObject redbox;
-   
-    public bool isblue = true;
 
+    private bool isbluee = true;
+    public bool Isbluee { get { return isbluee; } set { isbluee = value; } }
     private void Start()
     {
-        if(!isblue)
+        Debug.Log("enter" + isbluee);
+        if(!isbluee)
         {
-            Debug.Log("ALORS2" + isblue);
+            Debug.Log("ALORS2" + isbluee);
             gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
         }
         /*
@@ -40,7 +41,7 @@ public class Bullet : NetworkBehaviour
         if (Degatred)
         {
             var hit = collision.gameObject;
-            if (isblue)
+            if (isbluee)
             {
                 var etas = hit.GetComponent<enemicontroller>();
                 if (etas != null)

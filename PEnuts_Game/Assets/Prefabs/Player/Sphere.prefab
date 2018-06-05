@@ -207,7 +207,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743eda3e44bad3f428e9f72d0999a6dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 1865810057033202, guid: aada0d23238851644aed56aed1bc2d25, type: 2}
   Degatred: 1
 --- !u!114 &114530557876322030
 MonoBehaviour:
