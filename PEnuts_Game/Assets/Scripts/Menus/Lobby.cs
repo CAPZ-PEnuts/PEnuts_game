@@ -72,11 +72,12 @@ public class Lobby : MonoBehaviour {
 
         foreach (var match in matchList)
         {
-            var roomGameObject = GameObject.Find("room_" + id);
+            var roomGameObject = GameObject.Find("room_" + id).GetComponentInChildren<Button>();
             roomGameObject.GetComponentInChildren<TextMeshProUGUI>().SetText(match.name);
-            //roomGameObject.GetComponent<Button>().gameObject.SetActive(true);
-            //roomGameObject.GetComponent<Button>().onClick.RemoveAllListeners();
-            roomGameObject.GetComponent<Button>().onClick.AddListener(
+            roomGameObject.gameObject.SetActive(true);
+            roomGameObject.onClick.RemoveAllListeners();
+            //Debug.Log(roomGameObject.GetComponent<Button>());
+            roomGameObject.onClick.AddListener(
                 delegate
                 {
                     Debug.Log("test joining");
@@ -96,10 +97,10 @@ public class Lobby : MonoBehaviour {
         //disable empty rooms
         while (id <= 10)
         {
-            var roomGameObject = GameObject.Find("room_" + id);
+            var roomGameObject = GameObject.Find("room_" + id).GetComponentInChildren<Button>();
             roomGameObject.GetComponentInChildren<TextMeshProUGUI>().SetText("");
-            //roomGameObject.GetComponent<Button>().onClick.RemoveAllListeners();
-            //roomGameObject.GetComponent<Button>().gameObject.SetActive(false);
+            roomGameObject.onClick.RemoveAllListeners();
+            roomGameObject.gameObject.SetActive(false);
             id++;
         }
     }

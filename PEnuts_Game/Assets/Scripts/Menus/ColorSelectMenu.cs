@@ -4,18 +4,16 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 
-public class ColorSelectMenu : MonoBehaviour {
+public class ColorSelectMenu :NetworkBehaviour {
 
 	public GameObject bluebox;
 	
 	public GameObject redbox;
 	
 	public GameObject ColorSelectorCanvas;
-    
-	private void Start()
-	{
 
-	}
+
+    public bool isblue = true;
     
 	// Use this for initialization
 	public void BlueVision()
@@ -27,7 +25,17 @@ public class ColorSelectMenu : MonoBehaviour {
 			redbox.SetActive(false);
 		
 		ColorSelectorCanvas.SetActive(false);
-	}
+        /*
+        GameObject[] bluboxx = GameObject.FindGameObjectsWithTag("Player");
+        foreach (var player in bluboxx)
+        {
+            if (player.GetComponent<NetworkIdentity>().isLocalPlayer)
+            {
+                player.GetComponent<PlayerController>().isblue(true); 
+            }
+        }
+        */
+    }
 
 	public void RedVision()
 	{
@@ -36,9 +44,25 @@ public class ColorSelectMenu : MonoBehaviour {
 		
 		if (redbox != null)
 			redbox.SetActive(true);
-		
+       
 		ColorSelectorCanvas.SetActive(false);
-	}
+        isblue = false;
+        /*
+        GameObject[] bluboxx = GameObject.FindGameObjectsWithTag("Player");
+        foreach (var player in bluboxx)
+        {
+            if (player.GetComponent<PlayerController>().local) 
+            {
+                player.GetComponent<PlayerController>().isblue(false);
+                Debug.Log("STEPONE");
+            }
+            else
+            {
+                Debug.Log("NOONE");
+            }
+        }
+        */
+    }
 	
 	public void GoToLevel(string name)
 	{
