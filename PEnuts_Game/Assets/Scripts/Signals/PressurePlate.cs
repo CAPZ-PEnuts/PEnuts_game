@@ -23,8 +23,18 @@ public class PressurePlate : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+		
 		if (_state != _counter > 0)
 		{
+			if (_counter > 0)
+			{
+				FindObjectOfType<AudioManager>().Play("signalclique");
+			}
+			else
+			{
+				FindObjectOfType<AudioManager>().Play("sortiePP");
+			}
+
 			_state = !_state;
 			if (signal != null)
 			{
