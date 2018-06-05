@@ -10,7 +10,7 @@ public class Lobby : MonoBehaviour {
 
     public Text status;
     public InputField roomName;
-    public NetworkManager networkManager;
+    private NetworkManager networkManager;
 
     void Start()
     {
@@ -74,7 +74,7 @@ public class Lobby : MonoBehaviour {
         {
             var roomGameObject = GameObject.Find("room_" + id);
             roomGameObject.GetComponentInChildren<TextMeshProUGUI>().SetText(match.name);
-            roomGameObject.GetComponent<Button>().gameObject.SetActive(true);
+            //roomGameObject.GetComponent<Button>().gameObject.SetActive(true);
             //roomGameObject.GetComponent<Button>().onClick.RemoveAllListeners();
             roomGameObject.GetComponent<Button>().onClick.AddListener(
                 delegate
