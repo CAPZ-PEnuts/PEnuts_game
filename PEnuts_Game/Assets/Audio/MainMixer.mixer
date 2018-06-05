@@ -19,6 +19,8 @@ AudioMixerController:
     name: MasterVolume
   - guid: eeee910f05e47ef43bf1a3861e117e51
     name: SFXVolume
+  - guid: 46ff4a9ec01f50549955ce067b323c8f
+    name: ThemePitch
   - guid: 1ffabd2509e67bc498cfe3082b77402f
     name: ThemeVolume
   m_AudioMixerGroupViews:
@@ -72,6 +74,8 @@ AudioMixerSnapshotController:
   m_FloatValues:
     1ffabd2509e67bc498cfe3082b77402f: 0.04171297
     307067ebb3b10af4aa9a1f1df18af459: 0.10800299
+    46ff4a9ec01f50549955ce067b323c8f: 1
+    eeee910f05e47ef43bf1a3861e117e51: 0
   m_TransitionOverrides: {}
 --- !u!243 &243090017586493636
 AudioMixerGroupController:

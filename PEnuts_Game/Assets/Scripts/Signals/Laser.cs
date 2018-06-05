@@ -33,12 +33,12 @@ public class Laser : MonoBehaviour {
 
             Color color = signalHandelerObject.GetComponent<SignalHandeler>().GetSignalColor(signal);
 
-            laser1.GetComponent<Renderer>().material.SetColor("_Color", color);
-            laser2.GetComponent<Renderer>().material.SetColor("_Color", color);
-            laser3.GetComponent<Renderer>().material.SetColor("_Color", color);
-            laser4.GetComponent<Renderer>().material.SetColor("_Color", color);
-            laser5.GetComponent<Renderer>().material.SetColor("_Color", color);
-            laser6.GetComponent<Renderer>().material.SetColor("_Color", color);
+            laser1.GetComponent<Renderer>().material.color = color;
+            laser2.GetComponent<Renderer>().material.color = color;
+            laser3.GetComponent<Renderer>().material.color = color;
+            laser4.GetComponent<Renderer>().material.color = color;
+            laser5.GetComponent<Renderer>().material.color = color;
+            laser6.GetComponent<Renderer>().material.color = color;
         }
 	}
 
@@ -61,8 +61,8 @@ public class Laser : MonoBehaviour {
 				laser4.SetActive(false);
 				laser5.SetActive(false);
 				laser6.SetActive(false);
-
-			}
+				FindObjectOfType<AudioManager>().Play("lazer");
+				}
 		}
 	}
 }

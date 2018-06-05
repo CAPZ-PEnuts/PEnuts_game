@@ -27,7 +27,7 @@ public class Door : MonoBehaviour
 			if (!_colorUpdated)
 			{
 				_colorUpdated = true;
-				doorObject.GetComponent<Renderer>().material.SetColor("_Color",signalHandelerObject.GetComponent<SignalHandeler>().GetSignalColor(signal));
+				doorObject.GetComponent<Renderer>().material.color = signalHandelerObject.GetComponent<SignalHandeler>().GetSignalColor(signal);
 			}
 		}
 

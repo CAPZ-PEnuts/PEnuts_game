@@ -8,11 +8,15 @@ public class SettingsMenu : MonoBehaviour
 {
 
     public AudioMixer MainMixer;
+    public AudioManager AudioManager;
+
 
     public string nameMasterVolume;
     public string nameMusicVolume;
     public string nameEffectVolume;
 
+
+    private int _counter = 0;
 
     public Dropdown resolutionDropdown;
 
@@ -47,6 +51,7 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropdown.RefreshShownValue();
     }
 
+ 
     public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
@@ -66,6 +71,7 @@ public class SettingsMenu : MonoBehaviour
     public void SetEffectVolume(float volume)
     {
         MainMixer.SetFloat(nameEffectVolume, volume);
+        AudioManager.setPitch(volume);
     }
 
     public void SetQuality(int qualityIndex)

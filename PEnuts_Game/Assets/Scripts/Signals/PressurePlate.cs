@@ -23,8 +23,14 @@ public class PressurePlate : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+		
 		if (_state != _counter > 0)
 		{
+			if (_counter > 0)
+			{
+				FindObjectOfType<AudioManager>().Play("signalclique");
+			}
+			
 			_state = !_state;
 			if (signal != null)
 			{
@@ -40,12 +46,15 @@ public class PressurePlate : MonoBehaviour
 		}
 
 		if (_counter > 0)
+		{
 			_counter--;
-		
+			
+		}
+
 		if (!_colorUpdated)
 		{
 			_colorUpdated = true;
-			gameObject.GetComponent<Renderer>().material.SetColor("_Color",signalHandelerObject.GetComponent<SignalHandeler>().GetSignalColor(signal));
+			gameObject.GetComponent<Renderer>().material.color = signalHandelerObject.GetComponent<SignalHandeler>().GetSignalColor(signal);
 		}
 	}
 
@@ -53,6 +62,12 @@ public class PressurePlate : MonoBehaviour
 	{
 		_counter = 10;
 	}
+
+	private void OnTriggerExit(Collider other)
+	{
+		FindObjectOfType<AudioManager>().Play("sortiePP");
+	}
+
 /*
 	private void OnTriggerEnter(Collider intruder)
 	{

@@ -80,7 +80,6 @@ public class Lobby : MonoBehaviour {
             roomGameObject.onClick.AddListener(
                 delegate
                 {
-                    Debug.Log("test joining");
                     status.text = "Joining...";
                     networkManager.matchMaker.JoinMatch(match.networkId, "", "", "", 0, 0, OnMatchJoined);
                 });
