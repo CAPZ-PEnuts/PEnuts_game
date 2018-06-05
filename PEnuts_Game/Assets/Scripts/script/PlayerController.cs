@@ -16,8 +16,9 @@ public class PlayerController : NetworkBehaviour
     public bool condition; 
     public float speedmov = 1;
     public float speedjump = 5;
-    public float cadence_de_tir = 2f; 
-    
+    public float cadence_de_tir = 2f;
+
+    private bool etas; 
     
     private float nextfire = 0f;
     void Update()
@@ -57,7 +58,7 @@ public class PlayerController : NetworkBehaviour
                 nextfire = Time.time + cadence_de_tir; 
                 CmdFire();
             }
-            
+            playercolor.GetComponent<MeshRenderer>().material.color = Color.blue;
         }
         else
         {

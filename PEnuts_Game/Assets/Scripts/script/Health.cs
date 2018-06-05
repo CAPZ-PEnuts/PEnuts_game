@@ -26,7 +26,8 @@ public class Health : NetworkBehaviour
             {
                 currentHealth = maxhealth;
                 RpcRspawn();
-                NetworkManager.singleton.ServerChangeScene(SceneManager.GetActiveScene().name);
+                if(gameObject.CompareTag("Player"))
+                    NetworkManager.singleton.ServerChangeScene(SceneManager.GetActiveScene().name);
                 Debug.Log("dead!");
             }
         }

@@ -61,7 +61,7 @@ public class Server : NetworkManager
 
     void Update()
     {
-        if(player1Connection != null && player2Connection != null)
+        if(player1Connection != null) //&& player2Connection != null)
         {
             if (hasToSpawn1 && player1Connection.isReady)
             {

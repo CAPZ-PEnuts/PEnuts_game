@@ -1,18 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking; 
+using UnityEngine.Networking;
+public class Bullet2 : NetworkBehaviour {
+    // private GameObject blubox;
+    // private GameObject redbox;
 
-
-public class Bullet : NetworkBehaviour
-{
-   // private GameObject blubox;
-   // private GameObject redbox;
-
-  //  public GameObject Player; 
+    //  public GameObject Player; 
     private void Start()
     {
-        gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
+        gameObject.GetComponent<MeshRenderer>().material.color = Color.blue;
         /*
         GameObject[] bluboxx = GameObject.FindGameObjectsWithTag("blubox");
         if(bluboxx.Length != 0)
@@ -24,16 +21,16 @@ public class Bullet : NetworkBehaviour
             gameObject.GetComponent<MeshRenderer>().material.color = Color.red;
         */
     }
-    public bool Degatred = true; 
+    public bool Degatred = true;
     void OnCollisionEnter(Collision collision)
     {
         Debug.Log("hit");
         if (Degatred)
         {
             var hit = collision.gameObject;
-            var health = hit.GetComponent<Health>();
-            if (health != null)
-                health.TakeDamage(10);
+            var etas = hit.GetComponent<enemicontroller>();
+            if (etas != null)
+                etas.etas();
         }
 
         Destroy(gameObject);

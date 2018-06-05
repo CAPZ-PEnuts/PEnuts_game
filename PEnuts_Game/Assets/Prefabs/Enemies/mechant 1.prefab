@@ -501,7 +501,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1836841416046642
 GameObject:
   m_ObjectHideFlags: 1
@@ -723,7 +723,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1836087223584682}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0900001, y: 2, z: 0}
+  m_LocalPosition: {x: -0.0900003, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4512746348892608}
@@ -732,7 +732,7 @@ Transform:
   - {fileID: 4108976125608636}
   - {fileID: 4617466567242914}
   m_Father: {fileID: 4590677246334994}
-  m_RootOrder: 0
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4096554819459364
 Transform:
@@ -837,7 +837,7 @@ Transform:
   m_Children:
   - {fileID: 4904449530504600}
   m_Father: {fileID: 4590677246334994}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4336219527636530
 Transform:
@@ -866,7 +866,7 @@ Transform:
   - {fileID: 4341904415670218}
   - {fileID: 4379482000752654}
   m_Father: {fileID: 4590677246334994}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4341904415670218
 Transform:
@@ -919,7 +919,7 @@ Transform:
   m_Children:
   - {fileID: 4244618768936320}
   m_Father: {fileID: 4590677246334994}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4451456030451448
 Transform:
@@ -936,7 +936,7 @@ Transform:
   - {fileID: 4842170712816926}
   - {fileID: 4025085664887700}
   m_Father: {fileID: 4590677246334994}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4489014107939830
 Transform:
@@ -1000,7 +1000,6 @@ Transform:
   m_LocalPosition: {x: -1.15, y: -2.34, z: 4.03}
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_Children:
-  - {fileID: 4073518059805518}
   - {fileID: 4451456030451448}
   - {fileID: 4437872750085088}
   - {fileID: 4742255417922690}
@@ -1008,6 +1007,7 @@ Transform:
   - {fileID: 4300489678156626}
   - {fileID: 224582957736733252}
   - {fileID: 4913596052700568}
+  - {fileID: 4073518059805518}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -163.048, z: 0}
@@ -1065,7 +1065,7 @@ Transform:
   - {fileID: 4839720317020024}
   - {fileID: 4414341921213882}
   m_Father: {fileID: 4590677246334994}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4750471947014570
 Transform:
@@ -1152,7 +1152,7 @@ Transform:
   - {fileID: 4750471947014570}
   - {fileID: 4212649525597488}
   m_Father: {fileID: 4590677246334994}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4942429012475052
 Transform:
@@ -1753,7 +1753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentHealth: 100
   spawn: {fileID: 0}
-  healthbar: {fileID: 224582957736733252}
+  healthbar: {fileID: 224404057829982300}
 --- !u!114 &114201825147381050
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -25284,7 +25284,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -238808460
+  randomSeed: 364094033
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -38731,7 +38731,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -1725428350
+  randomSeed: -993235682
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -52112,7 +52112,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: 182796319
+  randomSeed: 1354197360
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -68779,7 +68779,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -687306029
+  randomSeed: -1918686823
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -72071,7 +72071,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -985742585
+  randomSeed: -131167128
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -76596,7 +76596,7 @@ RectTransform:
   m_Children:
   - {fileID: 224009993473332956}
   m_Father: {fileID: 4590677246334994}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
