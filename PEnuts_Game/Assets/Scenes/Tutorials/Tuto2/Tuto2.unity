@@ -3530,7 +3530,7 @@ Prefab:
     - target: {fileID: 114566650609564092, guid: 5ba78863e699703478cb2f6d46b232dd,
         type: 2}
       propertyPath: signal
-      value: b
+      value: T2b
       objectReference: {fileID: 0}
     - target: {fileID: 4966370261804916, guid: 5ba78863e699703478cb2f6d46b232dd, type: 2}
       propertyPath: m_LocalScale.x
