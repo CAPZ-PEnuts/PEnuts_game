@@ -58,6 +58,8 @@ public partial class PauseMenu : MonoBehaviour
 
     public void GoToLevel(string name)
     {
+        Time.timeScale = 1f;
+        GameIsPaused = false;
         foreach (GameObject p in GameObject.FindGameObjectsWithTag("NetworkPlayer"))
         {
             NetworkPlayer player = p.GetComponent<NetworkPlayer>();
@@ -70,6 +72,7 @@ public partial class PauseMenu : MonoBehaviour
     
     public void LoadMenu(string Menu)
     {
+        GameIsPaused = false;
         Time.timeScale = 1f;
         SceneManager.LoadScene(Menu);
         NetworkManager.Shutdown();
