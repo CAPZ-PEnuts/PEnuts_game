@@ -64,7 +64,27 @@ MonoBehaviour:
       type: 2}
     source: {fileID: 0}
   - name: signalclique
-    clip: {fileID: 8300000, guid: 8c3afdbbbb53c9d41bab7e2ff8f4fba7, type: 3}
+    clip: {fileID: 8300000, guid: 8303623812ebe764cb62168369573f20, type: 3}
+    volume: 0.505
+    volumeVariance: 0.425
+    pitch: 1.76
+    pitchVariance: 0.287
+    loop: 0
+    mixerGroup: {fileID: 243090017586493636, guid: e75dc9e991ad1ac4487bf0d4dd3af5c9,
+      type: 2}
+    source: {fileID: 0}
+  - name: tirejoueur
+    clip: {fileID: 8300000, guid: 490722e48caadeb4eab06d33ac912571, type: 3}
+    volume: 0.505
+    volumeVariance: 0.425
+    pitch: 1.76
+    pitchVariance: 0.287
+    loop: 0
+    mixerGroup: {fileID: 243090017586493636, guid: e75dc9e991ad1ac4487bf0d4dd3af5c9,
+      type: 2}
+    source: {fileID: 0}
+  - name: dangermechant
+    clip: {fileID: 8300000, guid: 2a8715bffe1b9e342ab130d4bce73674, type: 3}
     volume: 0.505
     volumeVariance: 0.425
     pitch: 1.76

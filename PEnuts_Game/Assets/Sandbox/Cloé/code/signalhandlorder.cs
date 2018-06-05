@@ -20,7 +20,8 @@ public class signalhandlorder : MonoBehaviour {
         if (boutton == mybut[i])
             i++;
         if (i == mybut.Length)
-            Destroy(porte);
+            porte.active = !porte.active; 
+            
     }
 	
 	
