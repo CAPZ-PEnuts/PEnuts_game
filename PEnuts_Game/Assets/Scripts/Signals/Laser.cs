@@ -61,8 +61,8 @@ public class Laser : MonoBehaviour {
 				laser4.SetActive(false);
 				laser5.SetActive(false);
 				laser6.SetActive(false);
-
-			}
+				FindObjectOfType<AudioManager>().Play("lazer");
+				}
 		}
 	}
 }

@@ -30,11 +30,7 @@ public class PressurePlate : MonoBehaviour
 			{
 				FindObjectOfType<AudioManager>().Play("signalclique");
 			}
-			else
-			{
-				FindObjectOfType<AudioManager>().Play("sortiePP");
-			}
-
+			
 			_state = !_state;
 			if (signal != null)
 			{
@@ -50,8 +46,11 @@ public class PressurePlate : MonoBehaviour
 		}
 
 		if (_counter > 0)
+		{
 			_counter--;
-		
+			
+		}
+
 		if (!_colorUpdated)
 		{
 			_colorUpdated = true;
@@ -63,6 +62,12 @@ public class PressurePlate : MonoBehaviour
 	{
 		_counter = 10;
 	}
+
+	private void OnTriggerExit(Collider other)
+	{
+		FindObjectOfType<AudioManager>().Play("sortiePP");
+	}
+
 /*
 	private void OnTriggerEnter(Collider intruder)
 	{
