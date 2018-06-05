@@ -1028,7 +1028,12 @@ Prefab:
       objectReference: {fileID: 2082399849}
     - target: {fileID: 1816652893840282, guid: a9253eddaf95b99448b21f733f3daf60, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114718622487286988, guid: a9253eddaf95b99448b21f733f3daf60,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToLevel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a9253eddaf95b99448b21f733f3daf60, type: 2}
