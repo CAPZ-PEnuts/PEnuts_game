@@ -57,6 +57,7 @@ public class PlayerController : NetworkBehaviour
             {
                 nextfire = Time.time + cadence_de_tir; 
                 CmdFire();
+                FindObjectOfType<AudioManager>().Play("tirejoueur");
             }
             playercolor.GetComponent<MeshRenderer>().material.color = Color.blue;
         }
