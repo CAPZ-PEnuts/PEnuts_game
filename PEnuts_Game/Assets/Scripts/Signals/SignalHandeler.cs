@@ -15,33 +15,37 @@ public class SignalHandeler : MonoBehaviour
         CYAN1,
         PINK1
 
-    };
+    }
 
     public static Color getColor(SignalColor col)
     {
-        Color color = new Color(255, 255, 255);
-
-        switch (col)
+        Color color = new Color(123, 123, 123);
+	    
+	    switch (col)
         {
             case SignalColor.BLUE1:
-                color = new Color(44, 65, 206);
+                color = new Color(0.1725f, 0.255f, 0.8f);
                 break;
             case SignalColor.RED1:
-                color = new Color(225, 65, 60);
+                color = new Color(1f, 0.255f, 0.2352f);
                 break;
             case SignalColor.YELLOW1:
-                color = new Color(202, 203, 50);
+                color = new Color(0.7921f, 0.7960f, 0.1960f);
                 break;
             case SignalColor.GREEN1:
-                color = new Color(102, 147, 0);
+                color = new Color(0.4f, 0.5764f, 0);
                 break;
             case SignalColor.CYAN1:
-                color = new Color(78, 178, 214);
+                color = new Color(0.3058f, 0.6980f, 0.8392f);
                 break;
             case SignalColor.PINK1:
-                color = new Color(247, 87, 171);
+                color = new Color(1, 0.3411f, 0.6705f);
                 break;
+            default:
+	            Debug.Log("WHYYY");
+	            break;
         }
+	    
 
         return color;
     }
@@ -103,8 +107,8 @@ public class SignalHandeler : MonoBehaviour
 		else
 		{
             AddSignal(name, false);
-            //Debug.Log("SignalHandeler.GetSignal: signal \"" + name + "\" doesn't exists!");
             return false;
+			//Debug.Log("SignalHandeler.GetSignal: signal \"" + name + "\" doesn't exists!");
 		}
 	}
 
@@ -113,13 +117,13 @@ public class SignalHandeler : MonoBehaviour
         if (Exists(name))
         {
             return getColor(_colors[name]);
+	        
         }
         else
         {
             AddSignal(name, false);
-
+	        return getColor(_colors[name]);
             //Debug.Log("SignalHandeler.GetSignalColor: signal \"" + name + "\" doesn't exists!");
-            return GetSignalColor(name);
         }
     }
 

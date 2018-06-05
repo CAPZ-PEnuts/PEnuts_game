@@ -45,7 +45,7 @@ public class PressurePlate : MonoBehaviour
 		if (!_colorUpdated)
 		{
 			_colorUpdated = true;
-			gameObject.GetComponent<Renderer>().material.SetColor("_Color",signalHandelerObject.GetComponent<SignalHandeler>().GetSignalColor(signal));
+			gameObject.GetComponent<Renderer>().material.color = signalHandelerObject.GetComponent<SignalHandeler>().GetSignalColor(signal);
 		}
 	}
 
