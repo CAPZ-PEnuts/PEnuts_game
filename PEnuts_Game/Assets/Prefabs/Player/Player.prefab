@@ -2178,6 +2178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86b7b2fcd341cac4faddf8f3487f94fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  local: 0
   playercolor: {fileID: 1525897997702282}
   balleprefab: {fileID: 1959866346270022, guid: 7639ce383cf6ea941bedde0259fdf41a,
     type: 2}
@@ -2242,6 +2243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0ba25a962d71894b8027f5e230790df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  local: 0
   playercolor: {fileID: 0}
   balleprefab: {fileID: 0}
   bulletspawn: {fileID: 0}
@@ -2602,6 +2604,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78baca44e41aa504780d12173e290205, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Main: {fileID: 0}
+  cameraToGo: {fileID: 0}
 --- !u!114 &114913361785378684
 MonoBehaviour:
   m_ObjectHideFlags: 1

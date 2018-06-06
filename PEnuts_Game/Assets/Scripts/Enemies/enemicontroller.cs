@@ -69,13 +69,13 @@ public class enemicontroller : MonoBehaviour
 		}
 		
 		//float distance = Vector3.Distance(player.transform.position, transform.position);
-		if (distance <= lookradius && gameplayer.Length != 0)
+		if (distance <= lookradius && gameplayer.Length != 0 && etas1)
 		{
 			//transform.LookAt(player.transform);
 			agent.SetDestination(player.transform.position);
 			lumiere.SetActive(true);
 		}
-		else //if(etas1)
+		else if(etas1)
 		{
 			lumiere.SetActive(false);
 			agent.SetDestination(spwanmechant.transform.position); 
@@ -104,7 +104,7 @@ public class enemicontroller : MonoBehaviour
                 darkmagic.SetActive(false);
 		}
 
-		if (distance < distance_de_degat)
+		if (distance < distance_de_degat && etas1)
 		{
 			if (Time.time > next_degat && gameplayer.Length != 0)
 			{
@@ -124,7 +124,7 @@ public class enemicontroller : MonoBehaviour
 	public void etas()
 	{
 		etas1 = false;
-		timeetas = 2 + Time.time; 
+		timeetas = 4 + Time.time; 
 	}
 
 	private void OnDrawGizmosSelected()

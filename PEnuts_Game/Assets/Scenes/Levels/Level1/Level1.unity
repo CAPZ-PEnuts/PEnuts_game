@@ -342,11 +342,11 @@ Prefab:
       objectReference: {fileID: 1342669397}
     - target: {fileID: 4005901604184764, guid: 8f77f292889cac24d815ad52c566eee4, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.8999996
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4005901604184764, guid: 8f77f292889cac24d815ad52c566eee4, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.8999996
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4005901604184764, guid: 8f77f292889cac24d815ad52c566eee4, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y

@@ -2230,15 +2230,15 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1354974526284134, guid: eb31ac242a9134046a2165c7bf39a8ef, type: 2}
-      propertyPath: m_Name
-      value: mechant
-      objectReference: {fileID: 0}
     - target: {fileID: 114843091644062040, guid: eb31ac242a9134046a2165c7bf39a8ef,
         type: 2}
       propertyPath: spwanmechant
       value: 
       objectReference: {fileID: 1862149233}
+    - target: {fileID: 1354974526284134, guid: eb31ac242a9134046a2165c7bf39a8ef, type: 2}
+      propertyPath: m_Name
+      value: mechant
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: eb31ac242a9134046a2165c7bf39a8ef, type: 2}
   m_IsPrefabParent: 0

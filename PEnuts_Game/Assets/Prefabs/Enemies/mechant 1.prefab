@@ -1751,7 +1751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53b5cc0bbd9dbfb4db91a76391a9e698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentHealth: 100
+  currentHealth: 30
   spawn: {fileID: 0}
   healthbar: {fileID: 224404057829982300}
 --- !u!114 &114201825147381050
@@ -1958,7 +1958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 560ef71466aa0ca469e66e0cec80173c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookradius: 2.55
+  lookradius: 1.92
   lumiere: {fileID: 1554920174724974}
   virus: {fileID: 1939132938789796}
   boom: {fileID: 1836087223584682}
