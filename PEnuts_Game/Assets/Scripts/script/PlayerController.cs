@@ -82,8 +82,11 @@ public class PlayerController : NetworkBehaviour
     {
         var bullet = (GameObject)Instantiate(balleprefab, bulletspawn.position, bulletspawn.rotation);
         bullet.GetComponent<Rigidbody>().velocity = bullet.transform.forward * 15f;
+        
         NetworkServer.Spawn(bullet);
-        //bullet.GetComponent<Bullet>().Isbluee = isblu;
+        
+        bullet.GetComponent<Bullet>().Isbluee = isblu;
+        
         Rpcfire(bullet, isblu);
         Destroy(bullet, 2.0f);
        
