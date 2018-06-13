@@ -789,6 +789,7 @@ MonoBehaviour:
   bluebox: {fileID: 0}
   redbox: {fileID: 0}
   ColorSelectorCanvas: {fileID: 1403770129481010}
+  isblue: 1
 --- !u!114 &114659759730648302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -908,7 +909,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114618936732115240}
-        m_MethodName: LoadMenu
+        m_MethodName: GoToLevel
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
