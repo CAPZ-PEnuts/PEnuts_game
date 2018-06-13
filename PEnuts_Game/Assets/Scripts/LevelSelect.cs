@@ -23,6 +23,11 @@ public class LevelSelect : MonoBehaviour {
                 gui.SetActive(false);
                 waiting.SetActive(true);
             }
+            if (player.client && player.id == 1)
+            {
+                gui.SetActive(true);
+                waiting.SetActive(false);
+            }
         }
         
     }
