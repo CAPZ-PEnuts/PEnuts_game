@@ -33,7 +33,7 @@ public class Lobby : MonoBehaviour {
     {
         var name = roomName.GetComponent<InputField>().text;
         roomName.GetComponent<InputField>().text = "";
-        if (name != null)
+        if (name != null && name != "")
         {
             networkManager.matchMaker.CreateMatch(name, 2, true, "", "", "", 0, 0, OnMatchCreated);
             RefreshRoomList();
