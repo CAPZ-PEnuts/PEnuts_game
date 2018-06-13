@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 
 public partial class PauseMenu : MonoBehaviour
 {
+    public GameObject hostCanvas;
+    public GameObject clientCanvas;
 
     private GameObject multi;
 
@@ -40,6 +42,21 @@ public partial class PauseMenu : MonoBehaviour
             else
                 Pause();
         }
+
+        foreach (GameObject p in GameObject.FindGameObjectsWithTag("NetworkPlayer"))
+        {
+            NetworkPlayer player = p.GetComponent<NetworkPlayer>();
+            if (player.client && player.id == 2)
+            {
+                hostCanvas.SetActive(false);
+                clientCanvas.SetActive(true);
+            }
+            if (player.client && player.id == 1)
+            {
+                hostCanvas.SetActive(true);
+                clientCanvas.SetActive(false);
+            }
+        }
     }
 
     public void Resume()
@@ -52,7 +69,7 @@ public partial class PauseMenu : MonoBehaviour
     void Pause()
     {
         pauseMenuUi.SetActive(true);
-        Time.timeScale = 0f;
+        //Time.timeScale = 0f;
         GameIsPaused = true;
     }
 

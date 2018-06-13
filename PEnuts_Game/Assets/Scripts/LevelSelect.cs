@@ -29,7 +29,6 @@ public class LevelSelect : MonoBehaviour {
                 waiting.SetActive(false);
             }
         }
-        
     }
 
     public void GoToLevel(string name)

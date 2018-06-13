@@ -8,7 +8,7 @@ public class SettingsMenu : MonoBehaviour
 {
 
     public AudioMixer MainMixer;
-    public AudioManager AudioManager;
+    private AudioManager AudioManager;
 
 
     public string nameMasterVolume;
@@ -24,6 +24,7 @@ public class SettingsMenu : MonoBehaviour
     void Start()
     {
         resolutions = Screen.resolutions;
+        AudioManager = FindObjectOfType<AudioManager>();
 
         var fullscreenToggle = GameObject.Find("FullscreenToggle").GetComponent<Toggle>();
         fullscreenToggle.isOn = Screen.fullScreen;

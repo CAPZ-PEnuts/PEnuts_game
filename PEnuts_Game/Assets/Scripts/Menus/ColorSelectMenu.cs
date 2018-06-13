@@ -14,9 +14,28 @@ public class ColorSelectMenu :NetworkBehaviour {
 
 
     public bool isblue = true;
-    
-	// Use this for initialization
-	public void BlueVision()
+
+
+    public GameObject hostCanvas;
+
+    public void Update()
+    {
+        foreach (GameObject p in GameObject.FindGameObjectsWithTag("NetworkPlayer"))
+        {
+            NetworkPlayer player = p.GetComponent<NetworkPlayer>();
+            if (player.client && player.id == 2)
+            {
+                hostCanvas.SetActive(false);
+            }
+            if (player.client && player.id == 1)
+            {
+                hostCanvas.SetActive(true);
+            }
+        }
+    }
+
+    // Use this for initialization
+    public void BlueVision()
 	{
 		if (bluebox != null)
 			bluebox.SetActive(true);
