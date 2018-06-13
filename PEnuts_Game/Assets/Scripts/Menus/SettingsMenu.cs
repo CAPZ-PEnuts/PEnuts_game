@@ -15,7 +15,6 @@ public class SettingsMenu : MonoBehaviour
     public string nameMusicVolume;
     public string nameEffectVolume;
 
-
     private int _counter = 0;
 
     public Dropdown resolutionDropdown;
@@ -25,7 +24,10 @@ public class SettingsMenu : MonoBehaviour
     void Start()
     {
         resolutions = Screen.resolutions;
-        
+
+        var fullscreenToggle = GameObject.Find("FullscreenToggle").GetComponent<Toggle>();
+        fullscreenToggle.isOn = Screen.fullScreen;
+
         if (resolutionDropdown.options != null)
             resolutionDropdown.ClearOptions();
         
@@ -38,8 +40,8 @@ public class SettingsMenu : MonoBehaviour
             //if (i != 0 && resolutions[i].width != resolutions[i-1].width && resolutions[i].height != resolutions[i-1].height)
                 options.Add(option);
 
-            if (resolutions[i].width == Screen.currentResolution.width &&
-                resolutions[i].height == Screen.currentResolution.height)
+            if (resolutions[i].width == Screen.width &&
+                resolutions[i].height == Screen.height)
             {
                 currentResolutionIndex = i;
             }
