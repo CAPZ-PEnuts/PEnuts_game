@@ -32,49 +32,54 @@ public class PlayerController : NetworkBehaviour
     }
     void Update()
     {
-        if (local)
+        bool ColorMenuActivated = GameObject.Find("ColorSelectMenu").GetComponent<ColorSelectMenu>().ColorMenuActivated;
+        if (!ColorMenuActivated)
         {
-            bool color = GameObject.Find("ColorSelectMenu").GetComponent<ColorSelectMenu>().isblue;
-            CmdSetColor(color);
-            /*
-            if (condition)
+            if (local)
             {
-                bluebox.SetActive(false);
-            }
-            else
-            {
-                redbox.SetActive(false);
-            }
-            */
-            var z = Input.GetAxis("Horizontal");
-            var x = Input.GetAxis("Vertical") * Time.deltaTime * speedmov;
-            transform.position += transform.up * Time.deltaTime * speedjump * Input.GetAxis("Jump");
-            //transform.Rotate(0, z*90, 0);
-            transform.Translate(0, 0, x);
-            if (Input.GetButtonDown("Horizontal"))
-            {
-                if (z < 0)
+                bool color = GameObject.Find("ColorSelectMenu").GetComponent<ColorSelectMenu>().isblue;
+                CmdSetColor(color);
+                /*
+                if (condition)
                 {
-                    transform.Rotate(0, -90, 0);
+                    bluebox.SetActive(false);
                 }
                 else
                 {
-                    transform.Rotate(0, 90, 0);
+                    redbox.SetActive(false);
                 }
+                */
+                var z = Input.GetAxis("Horizontal");
+                var x = Input.GetAxis("Vertical") * Time.deltaTime * speedmov;
+                transform.position += transform.up * Time.deltaTime * speedjump * Input.GetAxis("Jump");
+                //transform.Rotate(0, z*90, 0);
+                transform.Translate(0, 0, x);
+                if (Input.GetButtonDown("Horizontal"))
+                {
+                    if (z < 0)
+                    {
+                        transform.Rotate(0, -90, 0);
+                    }
+                    else
+                    {
+                        transform.Rotate(0, 90, 0);
+                    }
+                }
+
+
+                if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time > nextfire && !PauseMenu.GameIsPaused)
+                {
+                    nextfire = Time.time + cadence_de_tir;
+                    CmdFire();
+                    FindObjectOfType<AudioManager>().Play("tirejoueur");
+                }
+                playercolor.GetComponent<MeshRenderer>().material.color = (color)?Color.blue:Color.red;
             }
-
-
-            if (Input.GetKeyDown(KeyCode.Mouse0) && Time.time > nextfire)
+            else
             {
-                nextfire = Time.time + cadence_de_tir;
-                CmdFire();
-                FindObjectOfType<AudioManager>().Play("tirejoueur");
+                //playercolor.GetComponent<MeshRenderer>().material.color = Color.red;
+                playercolor.GetComponent<MeshRenderer>().gameObject.SetActive(false);
             }
-            playercolor.GetComponent<MeshRenderer>().material.color = Color.blue;
-        }
-        else
-        {
-            playercolor.GetComponent<MeshRenderer>().material.color = Color.red;
         }
     }
     [Command]

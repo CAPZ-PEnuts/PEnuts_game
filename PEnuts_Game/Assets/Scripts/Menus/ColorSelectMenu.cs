@@ -12,6 +12,7 @@ public class ColorSelectMenu :NetworkBehaviour {
 	
 	public GameObject ColorSelectorCanvas;
 
+    public bool ColorMenuActivated = true;
 
     public bool isblue = true;
 
@@ -44,6 +45,7 @@ public class ColorSelectMenu :NetworkBehaviour {
 			redbox.SetActive(false);
 		
 		ColorSelectorCanvas.SetActive(false);
+        ColorMenuActivated = false;
         /*
         GameObject[] bluboxx = GameObject.FindGameObjectsWithTag("Player");
         foreach (var player in bluboxx)
@@ -66,6 +68,7 @@ public class ColorSelectMenu :NetworkBehaviour {
        
 		ColorSelectorCanvas.SetActive(false);
         isblue = false;
+        ColorMenuActivated = false;
         /*
         GameObject[] bluboxx = GameObject.FindGameObjectsWithTag("Player");
         foreach (var player in bluboxx)
@@ -82,8 +85,8 @@ public class ColorSelectMenu :NetworkBehaviour {
         }
         */
     }
-	
-	public void GoToLevel(string name)
+
+    public void GoToLevel(string name)
 	{
 		foreach (GameObject p in GameObject.FindGameObjectsWithTag("NetworkPlayer"))
 		{

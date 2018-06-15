@@ -17,44 +17,53 @@ public partial class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUi;
 
-/*
-    private NetworkManager networkManager;
+    /*
+        private NetworkManager networkManager;
 
-    void Start()
-    {
-        networkManager = NetworkManager.singleton;
-    }
-
-    public void Disconnect()
-    {
-        MatchInfo matchInfo = networkManager.matchInfo;
-        networkManager.matchMaker.DropConnection(matchInfo.networkId, matchInfo.nodeId, 0,
-            networkManager.OnDropConnection);
-        networkManager.StopHost();
-    }
-*/    
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        void Start()
         {
-            if (GameIsPaused)
-                Resume();
-            else
-                Pause();
+            networkManager = NetworkManager.singleton;
         }
 
-        foreach (GameObject p in GameObject.FindGameObjectsWithTag("NetworkPlayer"))
+        public void Disconnect()
         {
-            NetworkPlayer player = p.GetComponent<NetworkPlayer>();
-            if (player.client && player.id == 2)
+            MatchInfo matchInfo = networkManager.matchInfo;
+            networkManager.matchMaker.DropConnection(matchInfo.networkId, matchInfo.nodeId, 0,
+                networkManager.OnDropConnection);
+            networkManager.StopHost();
+        }
+    */
+    void Start()
+    {
+        GameIsPaused = false;
+    }
+
+    void Update()
+    {
+        bool ColorMenuActivated = GameObject.Find("ColorSelectMenu").GetComponent<ColorSelectMenu>().ColorMenuActivated;
+        if (!ColorMenuActivated)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                hostCanvas.SetActive(false);
-                clientCanvas.SetActive(true);
+                if (GameIsPaused)
+                    Resume();
+                else
+                    Pause();
             }
-            if (player.client && player.id == 1)
+
+            foreach (GameObject p in GameObject.FindGameObjectsWithTag("NetworkPlayer"))
             {
-                hostCanvas.SetActive(true);
-                clientCanvas.SetActive(false);
+                NetworkPlayer player = p.GetComponent<NetworkPlayer>();
+                if (player.client && player.id == 2)
+                {
+                    hostCanvas.SetActive(false);
+                    clientCanvas.SetActive(true);
+                }
+                if (player.client && player.id == 1)
+                {
+                    hostCanvas.SetActive(true);
+                    clientCanvas.SetActive(false);
+                }
             }
         }
     }
